@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" data-provider-thread-count="3">
 	<listeners>
-		<listener class-name="com.tmb.listeners.ListenersClass" />
+		<listener class-name="com.nahmed.cucumber.listeners.ListenersClass" />
 		<listener class-name="com.tmb.listeners.MethodInterceptor" />
 		<listener class-name="com.tmb.listeners.AnnotationTransformer" />
 	</listeners>
 	<test thread-count="1" name="Test" parallel="methods">
 		<classes>
-			<class name="com.tmb.tests.OrangeHRMTests" />
-			<class name="com.tmb.tests.AmazonDemoTests" />
+			<class name="com.nahmed.cucumber.tests.OrangeHRMTests" />
+			<class name="com.nahmed.cucumber.tests.AmazonDemoTests" />
 		</classes>
 	</test> <!--
 	Test -->
