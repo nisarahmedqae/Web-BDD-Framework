@@ -1,0 +1,43 @@
+<configuration>
+
+    <!-- Define properties -->
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+    <property name="LOG_DIR" value="logs"/> <!-- Log directory relative to project root -->
+    <property name="LOG_FILE" value="${LOG_DIR}/api-tests.log"/>
+
+    <!-- Appender for Console Output -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Appender for File Output -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_FILE}</file>
+        <append>true</append> <!-- true=append to file, false=overwrite -->
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- === Configure Logger Levels === -->
+
+    <!-- Set the level for your framework's packages -->
+    <!-- Use DEBUG to see detailed logs from RestAssuredRequestFilter -->
+    <logger name="com.sabre.cucumber" level="DEBUG"/>
+
+    <!-- Set the level for noisy libraries -->
+    <logger name="io.restassured" level="INFO"/>
+    <logger name="org.apache.http" level="WARN"/> <!-- Apache HttpClient used by RestAssured -->
+    <logger name="com.github.dzieciou.testing.curl" level="INFO"/> <!-- Curl logger -->
+
+
+    <!-- Root logger level - catches everything not specified above -->
+    <!-- Set to INFO for general output, WARN to reduce noise -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/> <!-- Add this line to enable file logging -->
+    </root>
+
+</configuration>
