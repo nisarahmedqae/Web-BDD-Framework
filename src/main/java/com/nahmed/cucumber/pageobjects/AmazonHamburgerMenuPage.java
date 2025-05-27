@@ -1,7 +1,7 @@
 package com.nahmed.cucumber.pageobjects;
 
 import com.nahmed.cucumber.enums.WaitStrategy;
-import com.tmb.utils.DynamicXpathUtils;
+import com.nahmed.cucumber.utils.DynamicXpathUtils;
 import org.openqa.selenium.By;
 
 public class AmazonHamburgerMenuPage extends BasePage {

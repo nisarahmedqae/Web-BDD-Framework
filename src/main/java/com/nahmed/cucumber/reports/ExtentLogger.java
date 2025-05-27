@@ -2,8 +2,8 @@ package com.nahmed.cucumber.reports;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.nahmed.cucumber.enums.ConfigProperties;
-import com.tmb.utils.PropertyUtils;
-import com.tmb.utils.ScreenshotUtils;
+import com.nahmed.cucumber.utils.PropertyUtils;
+import com.nahmed.cucumber.utils.ScreenshotUtils;
 
 public final class ExtentLogger {
 
@@ -24,7 +24,7 @@ public final class ExtentLogger {
 	}
 
 	public static void pass(String message, boolean isScreenshotNeeded)   {
-		if (PropertyUtils.getValue(ConfigProperties.PASSEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")
+		if (PropertyUtils.getValue(ConfigProperties.PASSED_STEPS_SCREENSHOTS).equalsIgnoreCase("yes")
 				&& isScreenshotNeeded) {
 			ExtentManager.getExtentTest().pass(message,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtils.getBase64Image()).build());
@@ -34,7 +34,7 @@ public final class ExtentLogger {
 	}
 
 	public static void fail(String message, boolean isScreenshotNeeded) {
-		if (PropertyUtils.getValue(ConfigProperties.FAILEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")
+		if (PropertyUtils.getValue(ConfigProperties.FAILED_STEPS_SCREENSHOTS).equalsIgnoreCase("yes")
 				&& isScreenshotNeeded) {
 			ExtentManager.getExtentTest().fail(message,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtils.getBase64Image()).build());
@@ -44,7 +44,7 @@ public final class ExtentLogger {
 	}
 
 	public static void skip(String message, boolean isScreenshotNeeded)  {
-		if (PropertyUtils.getValue(ConfigProperties.SKIPPEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")
+		if (PropertyUtils.getValue(ConfigProperties.SKIPPED_STEPS_SCREENSHOTS).equalsIgnoreCase("yes")
 				&& isScreenshotNeeded) {
 			ExtentManager.getExtentTest().skip(message,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtils.getBase64Image()).build());

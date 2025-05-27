@@ -10,14 +10,15 @@ import org.testng.annotations.DataProvider;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "html:reports/cucumber/report.html",
                 "json:reports/cucumber/cucumber.json",
-                "com.nahmed.cucumber.utils.TestListener"
+                //"com.nahmed.cucumber.utils.TestListener"
+                //"com.nahmed.cucumber.listeners.ListenerClass"
         },
-        features = {"src/main/java/com/nahmed/cucumber/features"},
-        glue = {"com.nahmed.cucumber.stepdefs",
+        features = {"src/test/java/com/nahmed/cucumber/features"},
+        glue = {"com.nahmed.cucumber.stepdefinitions",
         "com.nahmed.cucumber.events"},
         monochrome = true,
         snippets = SnippetType.CAMELCASE,
-        tags = "@bookerAPI"
+        tags = "@login"
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {

@@ -4,7 +4,7 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 import com.nahmed.cucumber.enums.ConfigProperties;
-import com.tmb.utils.PropertyUtils;
+import com.nahmed.cucumber.utils.PropertyUtils;
 
 public class RetryFailedTests implements IRetryAnalyzer {
 
@@ -14,7 +14,7 @@ public class RetryFailedTests implements IRetryAnalyzer {
 	@Override
 	public boolean retry(ITestResult result) {
 		boolean value = false;
-		if (PropertyUtils.getValue(ConfigProperties.RETRYFAILEDTESTS).equalsIgnoreCase("yes")) {
+		if (PropertyUtils.getValue(ConfigProperties.RETRY_FAILED_TESTS).equalsIgnoreCase("yes")) {
 			value = count < retries;
 			count++;
 		}

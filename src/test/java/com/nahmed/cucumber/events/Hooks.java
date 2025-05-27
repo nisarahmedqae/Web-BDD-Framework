@@ -1,11 +1,15 @@
 package com.nahmed.cucumber.events;
 
-import com.nahmed.cucumber.utils.PropertiesFile;
+import com.nahmed.cucumber.driver.Driver;
+import com.nahmed.cucumber.enums.ConfigProperties;
+import com.nahmed.cucumber.utils.PropertyUtils;
 import com.nahmed.cucumber.utils.TestContext;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Map;
 
 public class Hooks {
 
@@ -16,46 +20,15 @@ public class Hooks {
         this.context = context;
     }
 
-    @Before(order = 1)
-    public void generateOAuthToken(Scenario scenario) {
+    @Before
+    protected void setUp() {
+        String browser = PropertyUtils.getValue(ConfigProperties.BROWSER);
+        Driver.initDriver(browser);
+    }
 
-        // Get the environment determined by TestContext
-        String targetEnvironment = context.getCurrentEnvironment();
-        String oauthUrlKey = "oauth.token.url." + targetEnvironment;
-        String tokenUrl = PropertiesFile.getProperty(oauthUrlKey);
-
-        LOG.info("Using OAuth Token URL for environment [" + targetEnvironment + "]: " + tokenUrl);
-
-        // --- Get OAuth Configuration from Properties ---
-        String clientId = PropertiesFile.getProperty("oauth.client.id");
-        String clientSecret = PropertiesFile.getProperty("oauth.client.secret");
-
-        LOG.info("Attempting to generate OAuth2 token...");
-        /*
-        Response tokenResponse = RestAssured
-                .given()
-                .log().ifValidationFails() // Log request details only if there's an error during the call
-                .contentType(ContentType.URLENC) // OAuth2 token endpoints often use form url encoding
-                .formParam("grant_type", "client_credentials")
-                .formParam("client_id", clientId)
-                .formParam("client_secret", clientSecret)
-                .when()
-                .post(tokenUrl)
-                .then()
-                .log().ifValidationFails() // Log response details only if validation below fails
-                .statusCode(200) // Expect a 200 OK for successful token generation
-                .contentType(ContentType.JSON) // Expect a JSON response
-                .extract().response();
-
-        // --- Extract Access Token ---
-        String accessToken = tokenResponse.jsonPath().getString("access_token");
-
-        // --- Store Token in TestContext Session ---
-        context.session.put("oauth_token", accessToken); // Use a consistent key
-         */
-
-        LOG.info("OAuth2 token successfully generated and stored in session.");
-
+    @After
+    protected void tearDown() {
+        Driver.quitDriver();
     }
 
 

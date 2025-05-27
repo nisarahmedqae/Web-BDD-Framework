@@ -13,36 +13,41 @@ import java.util.Properties;
 
 public final class PropertyUtils {
 
-	private PropertyUtils() {
+    private PropertyUtils() {
 
-	}
+    }
 
-	private static Properties prop = new Properties();
-	private static final Map<String, String> CONFIGMAP = new HashMap<>();
+    private static Properties prop = new Properties();
+    private static final Map<String, String> CONFIGMAP = new HashMap<>();
 
-	static {
-		try (FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath())) {
-			prop.load(fis);
+    static {
+        try (FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath())) {
+            prop.load(fis);
 
-			for (Map.Entry<Object, Object> entry : prop.entrySet()) {
-				CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim());
-			}
+            for (Map.Entry<Object, Object> entry : prop.entrySet()) {
+                CONFIGMAP.put(entry.getKey().toString().trim().toLowerCase(), entry.getValue().toString().trim().toLowerCase());
+            }
 
-			// prop.entrySet().forEach(entry ->
-			// CONFIGMAP.put(String.valueOf(entry.getKey()),
-			// String.valueOf(entry.getValue())));
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.exit(0);
-		}
-	}
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(0);
+        }
+    }
 
-	public static String getValue(ConfigProperties key) {
-		if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
-			throw new PropertyFileUsageException(
-					"Property name" + key + " is not found. Please check config.properties");
-		}
-		return CONFIGMAP.get(key.name().toLowerCase());
-	}
+    public static String getValue(ConfigProperties key) {
+        if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.toString().trim().toLowerCase()))) {
+            throw new PropertyFileUsageException(
+                    "Property name " + key + " is not found. Please check config.properties");
+        }
+        return CONFIGMAP.get(key.toString().trim().toLowerCase());
+    }
+
+    public static String getValue(String key) {
+        if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.trim().toLowerCase()))) {
+            throw new PropertyFileUsageException(
+                    "Property name" + key + " is not found. Please check config.properties");
+        }
+        return CONFIGMAP.get(key.trim().toLowerCase());
+    }
 
 }

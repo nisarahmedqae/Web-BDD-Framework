@@ -1,64 +1,48 @@
 package com.nahmed.cucumber.stepdefinitions;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
-import io.cucumber.java.en.Then;
+import com.nahmed.cucumber.enums.ConfigProperties;
+import com.nahmed.cucumber.pageobjects.HomePage;
+import com.nahmed.cucumber.pageobjects.LoginPage;
+import com.nahmed.cucumber.utils.AssertionService;
+import com.nahmed.cucumber.utils.BrowserService;
+import com.nahmed.cucumber.utils.PropertyUtils;
+import com.nahmed.cucumber.utils.TestContext;
 import io.cucumber.java.en.And;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import com.nahmed.cucumber.pageobjects.LoginPage; // Your existing Page Object
-import com.yourcompany.pageobjects.DashboardPage; // Your existing Page Object
-import com.yourcompany.utils.WebDriverManagerUtil; // Your ThreadLocal WebDriver manager (see below)
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class LoginSteps {
 
-    private WebDriver driver;
-    private LoginPage loginPage;
-    private DashboardPage dashboardPage;
+    LoginPage loginPage;
+    HomePage homePage;
+    TestContext testContext;
+    BrowserService browserService;
+    AssertionService assertionService;
 
-    // Using a Before hook (see Hooks.java) is better for driver setup
-    // but for simplicity, you can get it here.
-    // It's crucial that WebDriverManagerUtil.getDriver() returns a thread-safe driver.
-
-    @Given("I am on the application login page")
-    public void i_am_on_the_application_login_page() {
-        driver = WebDriverManagerUtil.getDriver();
-        loginPage = new LoginPage(driver); // Instantiate your Page Object
-        driver.get("https://your-app-url.com/login"); // Navigate to login page
+    public LoginSteps() {
+        this.loginPage = new LoginPage();
+        this.testContext = new TestContext();
+        this.browserService = new BrowserService();
+        this.homePage = new HomePage();
+        this.assertionService = new AssertionService();
     }
 
-    @When("I enter username {string} and password {string}")
-    public void i_enter_username_and_password(String username, String password) {
-        // Ensure loginPage is initialized if not done in a @Before hook or previous step
-        if (loginPage == null) {
-            driver = WebDriverManagerUtil.getDriver();
-            loginPage = new LoginPage(driver);
-        }
-        loginPage.enterUsername(username);
-        loginPage.enterPassword(password);
+    @Given("User is on the application login page")
+    public void userIsOnTheApplicationLoginPage() {
+        String url = PropertyUtils.getValue(ConfigProperties.URL + testContext.getCurrentEnvironment());
+        browserService.openUrl(url);
     }
 
-    @And("I click on the login button")
-    public void i_click_on_the_login_button() {
-        loginPage.clickLoginButton();
+    @When("User enters email {string} and password {string}")
+    public void userEntersEmailAndPassword(String email, String password) {
+        loginPage.enterEmail(email).enterPassword(password);
     }
 
-    @Then("I should be navigated to the dashboard")
-    public void i_should_be_navigated_to_the_dashboard() {
-        dashboardPage = new DashboardPage(driver);
-        Assert.assertTrue(dashboardPage.isDashboardVisible(), "Not navigated to dashboard.");
+    @And("User click on the login button")
+    public void userClickOnTheLoginButton() {
+        loginPage.clickOnLoginButton();
     }
 
-    @And("I should see a welcome message containing {string}")
-    public void i_should_see_a_welcome_message_containing(String usernameSubstring) {
-        String welcomeMessage = dashboardPage.getWelcomeMessage();
-        Assert.assertTrue(welcomeMessage.contains(usernameSubstring),
-                "Welcome message does not contain: " + usernameSubstring);
-    }
-
-    @Then("I should see an error message {string}")
-    public void i_should_see_an_error_message(String expectedError) {
-        Assert.assertEquals(loginPage.getErrorMessage(), expectedError, "Error message mismatch.");
-    }
 }
 

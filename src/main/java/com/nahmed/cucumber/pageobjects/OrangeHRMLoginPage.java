@@ -1,7 +1,7 @@
 package com.nahmed.cucumber.pageobjects;
 
 import com.nahmed.cucumber.enums.WaitStrategy;
-import com.tmb.utils.DecodeUtils;
+import com.nahmed.cucumber.utils.DecodeUtils;
 import org.openqa.selenium.By;
 
 public final class OrangeHRMLoginPage extends BasePage {

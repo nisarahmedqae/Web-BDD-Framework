@@ -17,7 +17,7 @@ public final class ExplicitWaitFactory {
 
 	}
 
-	public static WebElement performExplicitWait(WaitStrategy waitstrategy, By by) {
+	public static WebElement performExplicitWait(By by, WaitStrategy waitstrategy) {
 		WebElement element = null;
 		if (waitstrategy == WaitStrategy.CLICKABLE) {
 			element = new WebDriverWait(DriverManager.getDriver(),
