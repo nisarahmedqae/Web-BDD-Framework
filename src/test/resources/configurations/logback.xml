@@ -25,7 +25,7 @@
 
     <!-- Set the level for your framework's packages -->
     <!-- Use DEBUG to see detailed logs from RestAssuredRequestFilter -->
-    <logger name="com.sabre.cucumber" level="DEBUG"/>
+    <logger name="com.nahmed" level="DEBUG"/>
 
     <!-- Set the level for noisy libraries -->
     <logger name="io.restassured" level="INFO"/>
