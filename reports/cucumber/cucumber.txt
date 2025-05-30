@@ -1,44 +1,7 @@
 
 @login
-Scenario Outline: Successful login with valid credentials "Wrong Password"   # src/test/java/com/nahmed/cucumber/features/login.feature:15
-  Given User is on the application login page                                # com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
-      java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "com.nahmed.cucumber.driver.DriverManager.getDriver()" is null
-      	at com.nahmed.cucumber.utils.BrowserService.openUrl(BrowserService.java:13)
-      	at com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage(LoginSteps.java:34)
-      	at ✽.User is on the application login page(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/cucumber/features/login.feature:8)
-  When User enters email "demo.testfire@gmail.com" and password "P@sswOrd1!" # com.nahmed.cucumber.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
-  And User click on the login button                                         # com.nahmed.cucumber.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
-  Then User should be navigated to the homepage "Automation Practice"        # com.nahmed.cucumber.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
-
-@login
-Scenario Outline: Successful login with valid credentials "Invalid Username" # src/test/java/com/nahmed/cucumber/features/login.feature:16
-  Given User is on the application login page                                # com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
-      java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "com.nahmed.cucumber.driver.DriverManager.getDriver()" is null
-      	at com.nahmed.cucumber.utils.BrowserService.openUrl(BrowserService.java:13)
-      	at com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage(LoginSteps.java:34)
-      	at ✽.User is on the application login page(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/cucumber/features/login.feature:8)
-  When User enters email "testuser2@app.com" and password "Demo@123"         # com.nahmed.cucumber.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
-  And User click on the login button                                         # com.nahmed.cucumber.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
-  Then User should be navigated to the homepage "Automation Practice"        # com.nahmed.cucumber.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
-
-@login
-Scenario Outline: Successful login with valid credentials "Wrong PageName" # src/test/java/com/nahmed/cucumber/features/login.feature:17
-  Given User is on the application login page                              # com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
-      java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "com.nahmed.cucumber.driver.DriverManager.getDriver()" is null
-      	at com.nahmed.cucumber.utils.BrowserService.openUrl(BrowserService.java:13)
-      	at com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage(LoginSteps.java:34)
-      	at ✽.User is on the application login page(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/cucumber/features/login.feature:8)
-  When User enters email "testuser2@app.com" and password "Demo@123"       # com.nahmed.cucumber.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
-  And User click on the login button                                       # com.nahmed.cucumber.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
-  Then User should be navigated to the homepage "Automation Practice"      # com.nahmed.cucumber.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
-
-@login
 Scenario Outline: Successful login with valid credentials "Valid Details"  # src/test/java/com/nahmed/cucumber/features/login.feature:18
   Given User is on the application login page                              # com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
-      java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "com.nahmed.cucumber.driver.DriverManager.getDriver()" is null
-      	at com.nahmed.cucumber.utils.BrowserService.openUrl(BrowserService.java:13)
-      	at com.nahmed.cucumber.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage(LoginSteps.java:34)
-      	at ✽.User is on the application login page(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/cucumber/features/login.feature:8)
   When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.cucumber.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
   And User click on the login button                                       # com.nahmed.cucumber.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
   Then User should be navigated to the homepage "Automation Practice"      # com.nahmed.cucumber.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
