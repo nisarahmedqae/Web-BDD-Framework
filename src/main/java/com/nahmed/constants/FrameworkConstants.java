@@ -10,7 +10,7 @@ public final class FrameworkConstants {
 	}
 
 	private static final String RESOURCESPATH = System.getProperty("user.dir") + "/src/test/resources";
-	private static final String CONFIGFILEPATH = RESOURCESPATH + "/configurations/config.properties";
+	private static final String CONFIGFILEPATH = RESOURCESPATH + "/config.properties";
 	private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir") + "/reports/extent-test-output";
 	private static final String RUNMANAGERDATASHEET = "RUNMANAGER";
 

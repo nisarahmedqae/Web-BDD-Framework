@@ -28,10 +28,21 @@
     <logger name="com.nahmed" level="DEBUG"/>
 
     <!-- Set the level for noisy libraries -->
-    <logger name="io.restassured" level="INFO"/>
-    <logger name="org.apache.http" level="WARN"/> <!-- Apache HttpClient used by RestAssured -->
-    <logger name="com.github.dzieciou.testing.curl" level="INFO"/> <!-- Curl logger -->
+    <!-- Your existing appenders and root logger configuration -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
 
+    <!-- Set the logging level for freemarker.cache to WARN or INFO -->
+    <logger name="freemarker.cache" level="WARN"/>
+    <!-- Or use INFO if you still want some, but not DEBUG: -->
+    <!-- <logger name="freemarker.cache" level="INFO"/> -->
+
+    <root level="DEBUG"> <!-- Or your default root level -->
+        <appender-ref ref="STDOUT" />
+    </root>
 
     <!-- Root logger level - catches everything not specified above -->
     <!-- Set to INFO for general output, WARN to reduce noise -->

@@ -1,0 +1,97 @@
+2025-05-31 00:35:00.770 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-05-31 00:35:00.801 [main] INFO  com.nahmed.reports.ExtentManager - Initializing ExtentReports via ExtentManager...
+2025-05-31 00:35:01.064 [main] INFO  com.nahmed.reports.ExtentManager - ExtentReports initialized by ExtentManager. Report will be saved to: reports/extent/
+2025-05-31 00:35:01.537 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:35:01.537 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-05-31 00:35:01.537 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-30T19:05:01.537370300Z[0m
+2025-05-31 00:35:01.537 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:35:01.806 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-05-31 00:35:01.806 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-05-31 00:35:01.806 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Successful login with valid credentials "Valid Details" (Line: 18)[0m
+2025-05-31 00:35:01.806 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-05-31 00:35:01.806 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-05-31 00:35:01.806 [main] INFO  com.nahmed.events.Hooks - HOOKS @Before: Scenario - Successful login with valid credentials "Valid Details"
+2025-05-31 00:36:29.924 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-05-31 00:36:29.956 [main] INFO  com.nahmed.reports.ExtentManager - Initializing ExtentReports via ExtentManager...
+2025-05-31 00:36:30.242 [main] INFO  com.nahmed.reports.ExtentManager - ExtentReports initialized by ExtentManager. Report will be saved to: reports/extent/
+2025-05-31 00:36:30.691 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:36:30.691 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-05-31 00:36:30.691 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-30T19:06:30.691803Z[0m
+2025-05-31 00:36:30.691 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:36:30.963 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-05-31 00:36:30.963 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-05-31 00:36:30.963 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Successful login with valid credentials "Valid Details" (Line: 18)[0m
+2025-05-31 00:36:30.963 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-05-31 00:36:30.963 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-05-31 00:36:30.965 [main] INFO  com.nahmed.events.Hooks - HOOKS @Before: Scenario - Successful login with valid credentials "Valid Details"
+2025-05-31 00:36:32.474 [main] DEBUG com.nahmed.reports.ExtentReport - Creating ExtentTest in ExtentReport for: Successful login with valid credentials "Valid Details"
+2025-05-31 00:36:32.474 [main] DEBUG com.nahmed.reports.ExtentManager - Setting ExtentTest in ExtentManager for thread 1: Successful login with valid credentials "Valid Details"
+2025-05-31 00:36:32.484 [main] INFO  com.nahmed.listeners.TestListener -   Given User is on the application login page
+2025-05-31 00:36:32.484 [main] INFO  com.nahmed.utils.TestContext - Determined target environment: _int
+2025-05-31 00:36:36.959 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-05-31 00:36:37.035 [main] INFO  com.nahmed.listeners.TestListener -   When User enters email "demo.testfire@gmail.com" and password "Demo@123"
+2025-05-31 00:36:37.200 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-05-31 00:36:37.200 [main] INFO  com.nahmed.listeners.TestListener -   And User click on the login button
+2025-05-31 00:36:37.276 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-05-31 00:36:37.276 [main] INFO  com.nahmed.listeners.TestListener -   Then User should be navigated to the homepage "Automation Practice"
+2025-05-31 00:36:37.653 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
+2025-05-31 00:36:37.655 [main] INFO  com.nahmed.events.Hooks - HOOKS @After: Scenario - Successful login with valid credentials "Valid Details"
+2025-05-31 00:36:37.855 [main] DEBUG com.nahmed.reports.ExtentManager - Unloading ExtentTest from ExtentManager for thread 1: Successful login with valid credentials "Valid Details"
+2025-05-31 00:36:37.855 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-05-31 00:36:37.855 [main] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Successful login with valid credentials "Valid Details" --> PASSED[0m
+2025-05-31 00:36:37.855 [main] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 7.00 seconds[0m
+2025-05-31 00:36:37.855 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-05-31 00:36:37.855 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-05-31 00:36:37.919 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:36:37.921 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-05-31 00:36:37.921 [main] INFO  com.nahmed.listeners.TestListener - [32m Overall Status: PASSED[0m
+2025-05-31 00:36:37.921 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-30T19:06:37.871568300Z[0m
+2025-05-31 00:36:37.921 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:36:37.969 [main] INFO  com.nahmed.reports.ExtentManager - Flushing ExtentReports via ExtentManager...
+2025-05-31 00:36:38.871 [main] INFO  com.nahmed.reports.ExtentManager - ExtentReports flushed by ExtentManager.
+2025-05-31 00:36:38.871 [main] DEBUG com.nahmed.reports.ExtentManager - No ExtentTest to unload in ExtentManager for thread 1.
+2025-05-31 00:38:56.003 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-05-31 00:38:56.035 [main] INFO  com.nahmed.reports.ExtentManager - Initializing ExtentReports via ExtentManager...
+2025-05-31 00:38:56.311 [main] INFO  com.nahmed.reports.ExtentManager - ExtentReports initialized by ExtentManager. Report will be saved to: reports/extent/
+2025-05-31 00:38:56.816 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:38:56.816 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-05-31 00:38:56.818 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-30T19:08:56.816205800Z[0m
+2025-05-31 00:38:56.819 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:38:57.056 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-05-31 00:38:57.056 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-05-31 00:38:57.056 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Successful login with valid credentials "Valid Details" (Line: 18)[0m
+2025-05-31 00:38:57.056 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-05-31 00:38:57.056 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-05-31 00:38:57.056 [main] INFO  com.nahmed.events.Hooks - HOOKS @Before: Scenario - Successful login with valid credentials "Valid Details"
+2025-05-31 00:38:58.548 [main] DEBUG com.nahmed.reports.ExtentReport - Creating ExtentTest in ExtentReport for: Successful login with valid credentials "Valid Details"
+2025-05-31 00:38:58.548 [main] DEBUG com.nahmed.reports.ExtentManager - Setting ExtentTest in ExtentManager for thread 1: Successful login with valid credentials "Valid Details"
+2025-05-31 00:38:58.560 [main] INFO  com.nahmed.listeners.TestListener -   Given User is on the application login page
+2025-05-31 00:38:58.565 [main] INFO  com.nahmed.utils.TestContext - Determined target environment: _int
+2025-05-31 00:39:02.270 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-05-31 00:39:02.271 [main] INFO  com.nahmed.listeners.TestListener -   When User enters email "demo.testfire@gmail.com" and password "Demo@123"
+2025-05-31 00:39:02.458 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-05-31 00:39:02.458 [main] INFO  com.nahmed.listeners.TestListener -   And User click on the login button
+2025-05-31 00:39:02.576 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-05-31 00:39:02.576 [main] INFO  com.nahmed.listeners.TestListener -   Then User should be navigated to the homepage "Automation Practice"
+2025-05-31 00:39:03.153 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
+2025-05-31 00:39:03.156 [main] INFO  com.nahmed.events.Hooks - HOOKS @After: Scenario - Successful login with valid credentials "Valid Details"
+2025-05-31 00:39:03.383 [main] DEBUG com.nahmed.reports.ExtentManager - Unloading ExtentTest from ExtentManager for thread 1: Successful login with valid credentials "Valid Details"
+2025-05-31 00:39:03.383 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-05-31 00:39:03.383 [main] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Successful login with valid credentials "Valid Details" --> PASSED[0m
+2025-05-31 00:39:03.383 [main] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 6.41 seconds[0m
+2025-05-31 00:39:03.383 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-05-31 00:39:03.383 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-05-31 00:39:05.134 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:39:05.134 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-05-31 00:39:05.134 [main] INFO  com.nahmed.listeners.TestListener - [32m Overall Status: PASSED[0m
+2025-05-31 00:39:05.134 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-30T19:09:03.398941400Z[0m
+2025-05-31 00:39:05.134 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-05-31 00:39:05.182 [main] INFO  com.nahmed.reports.ExtentManager - Flushing ExtentReports via ExtentManager...
+2025-05-31 00:39:05.287 [main] INFO  com.nahmed.reports.ExtentManager - ExtentReports flushed by ExtentManager.
+2025-05-31 00:39:05.287 [main] DEBUG com.nahmed.reports.ExtentManager - No ExtentTest to unload in ExtentManager for thread 1.
