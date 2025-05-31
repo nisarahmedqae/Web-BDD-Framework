@@ -9,10 +9,17 @@ Scenario Outline: Login test with different credentials "Invalid PageName" # src
       	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
       	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:20)
       	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:11)
+
+@login
+Scenario Outline: Login test with different credentials "Valid PageName"   # src/test/java/com/nahmed/features/login.feature:16
+  Given User is on the application login page                              # com.nahmed.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
+  When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
+  And User click on the login button                                       # com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
+  Then User should be navigated to the homepage "Automation Practice"      # com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because the return value of "com.nahmed.driver.DriverManager.getDriver()" is null
 	at com.nahmed.utils.ScreenshotUtils.getBase64Image(ScreenshotUtils.java:14)
 	at com.nahmed.reports.ExtentLogger.fail(ExtentLogger.java:40)
-	at com.nahmed.listeners.TestListener.handleTestCaseFinished(TestListener.java:154)
+	at com.nahmed.listeners.TestListener.handleTestCaseFinished(TestListener.java:153)
 	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
 	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
 	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)

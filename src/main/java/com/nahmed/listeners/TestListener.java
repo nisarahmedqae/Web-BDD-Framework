@@ -70,7 +70,7 @@ public class TestListener implements ConcurrentEventListener {
             String stepDescription = keyword.trim() + " " + stepText;
             LOG.info(ANSI_BLUE + "  " + stepDescription + ANSI_RESET);
 
-            ExtentReport.createTest(stepDescription);
+            ExtentReport.addStep(stepDescription);
         }
     }
 
@@ -206,10 +206,6 @@ public class TestListener implements ConcurrentEventListener {
         LOG.info(overallColor + " Overall Status: " + status.name() + ANSI_RESET);
         LOG.info(ANSI_PURPLE + " Timestamp: " + event.getInstant() + ANSI_RESET);
         LOG.info(ANSI_PURPLE + "=========================================================================================" + ANSI_RESET);
-
-        if (result.getError() != null) {
-            LOG.error(ANSI_RED + "A critical error occurred during the test run (e.g., in a @BeforeAll/@AfterAll hook):" + ANSI_RESET, result.getError());
-        }
 
         ExtentReport.flushReports();
     }

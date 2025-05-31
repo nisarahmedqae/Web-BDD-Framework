@@ -20,6 +20,9 @@ public final class ExtentReport {
 
 	private static ExtentReports extent;
 
+	// ThreadLocal to hold the ExtentTest instance for the current scenario
+	private static ThreadLocal<ExtentTest> scenarioTestThreadLocal = new ThreadLocal<>();
+
 	public static void initReports() {
 		if (Objects.isNull(extent)) {
 			extent = new ExtentReports();
@@ -35,7 +38,8 @@ public final class ExtentReport {
 		if (Objects.nonNull(extent)) {
 			extent.flush();
 		}
-		ExtentManager.unload();
+		ExtentManager.unload(); // Unloads ExtentManager's context
+		scenarioTestThreadLocal.remove(); // Clean up scenario context
 		try {
 			Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentReportFilePath()).toURI());
 		} catch (IOException e) {
@@ -43,20 +47,45 @@ public final class ExtentReport {
 		}
 	}
 
-	public static void createTest(String testcasename) {
-		ExtentTest test = extent.createTest(testcasename);
-		ExtentManager.setExtentTest(test);
+	public static void createTest(String testCaseName) {
+		ExtentTest scenarioTest = extent.createTest(testCaseName);
+		scenarioTestThreadLocal.set(scenarioTest);
+		ExtentManager.setExtentTest(scenarioTest); // Set scenario as current test in ExtentManager
+	}
+
+	public static void addStep(String stepDescription) {
+		ExtentTest currentScenario = scenarioTestThreadLocal.get();
+		if (currentScenario != null) {
+			ExtentTest stepTest = currentScenario.createNode(stepDescription);
+			ExtentManager.setExtentTest(stepTest); // Now, ExtentManager's context is this step
+		} else {
+			System.err.println("ERROR: Cannot add step '" + stepDescription + "'. Current scenario test not found in ExtentReport.");
+		}
+	}
+
+	public static ExtentTest getCurrentScenarioTest() {
+		return scenarioTestThreadLocal.get();
 	}
 
 	public static void addAuthors(String[] authors) {
-		for (String temp : authors) {
-			ExtentManager.getExtentTest().assignAuthor(temp);
+		ExtentTest scenario = scenarioTestThreadLocal.get(); // Get the scenario test
+		if (scenario != null) {
+			for (String temp : authors) {
+				scenario.assignAuthor(temp);
+			}
+		} else {
+			System.err.println("ERROR: Cannot add authors. Current scenario test not found.");
 		}
 	}
 
 	public static void addCategories(CategoryType[] categories) {
-		for (CategoryType temp : categories) {
-			ExtentManager.getExtentTest().assignCategory(temp.toString());
+		ExtentTest scenario = scenarioTestThreadLocal.get(); // Get the scenario test
+		if (scenario != null) {
+			for (CategoryType temp : categories) {
+				scenario.assignCategory(temp.toString());
+			}
+		} else {
+			System.err.println("ERROR: Cannot add categories. Current scenario test not found.");
 		}
 	}
 
