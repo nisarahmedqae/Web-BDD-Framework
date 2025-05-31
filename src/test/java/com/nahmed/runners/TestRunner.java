@@ -15,7 +15,6 @@ import com.nahmed.reports.ExtentManager;
                 "html:reports/cucumber/report.html",
                 "json:reports/cucumber/cucumber.json",
                 "com.nahmed.listeners.TestListener"
-                //"com.nahmed.listeners.ListenerClass"
         },
         features = {"src/test/java/com/nahmed/features"},
         glue = {"com.nahmed.stepdefinitions",
@@ -33,15 +32,15 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     public Object[][] scenarios() {
         return super.scenarios();
     }
-
+/*
     @BeforeSuite(alwaysRun = true)
     public void initializeExtentReport() {
-        ExtentManager.initReports("reports/extent/", "AutomationReport", "Test Execution Results");
+        ExtentManager.initReports();
     }
 
     @AfterSuite(alwaysRun = true)
     public void tearDownExtentReport() {
         ExtentManager.flushReports();
     }
-
+*/
 }

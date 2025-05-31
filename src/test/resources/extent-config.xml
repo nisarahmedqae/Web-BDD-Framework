@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extentreports>
-	<configuration>
-		<!-- report theme -->
-		<!-- standard, dark -->
-		<theme>dark</theme>
-		<!-- document encoding -->
-		<!-- defaults to UTF-8 -->
-		<encoding>UTF-8</encoding>
-		<!-- protocol for script and stylesheets -->
-		<!-- defaults to https -->
-		<protocol>http</protocol>
-		<!-- title of the document -->
-		<documentTitle>Web Report</documentTitle>
-		<!-- report name - displayed at top-nav -->
-		<reportName>Execution Report</reportName>
-		<!-- location of charts in the test view -->
-		<!-- top, bottom -->
-		<testViewChartLocation>top</testViewChartLocation>
-		<!-- custom javascript -->
-		<!-- offlineMode>true</offlineMode -->
-		<scripts>
-<![CDATA[
-$(document).ready(function() {
-});
-]]>
-		</scripts>
-		<!-- custom styles -->
-		<styles>
-<![CDATA[
-]]>
-		</styles>
-	</configuration>
-</extentreports>
+<configuration>
+	<theme>STANDARD</theme> <!-- This would override extent.theme from properties -->
+	<encoding>UTF-8</encoding>
+	<protocol>https</protocol>
+	<documentTitle>Detailed Config - Web BDD Test Results</documentTitle> <!-- Overrides properties -->
+	<reportName>Detailed Automation Report</reportName> <!-- Overrides properties -->
+	<timeStampFormat>MMM dd, yyyy HH:mm:ss a</timeStampFormat>
+	<js></js>
+	<css></css>
+	<!-- Add other Spark reporter configurations as needed -->
+	<!--
+    <viewConfigurer>
+        <viewOrder>DASHBOARD,TEST,AUTHOR,DEVICE,EXCEPTION,LOG</viewOrder>
+    </viewConfigurer>
+    -->
+</configuration>
