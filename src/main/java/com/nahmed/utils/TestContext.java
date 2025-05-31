@@ -9,9 +9,6 @@ import java.util.Map;
 
 public class TestContext {
 
-    // Logger
-    private static final Logger LOG = LoggerFactory.getLogger(TestContext.class);
-
     public Map<String, Object> sessionMap = new HashMap<>();
 
     // Constants for environment selection
@@ -29,7 +26,6 @@ public class TestContext {
                     : envFromProps;
 
             this.currentEnvironment = "_" + System.getProperty(ENV_SYSTEM_PROPERTY, defaultEnvironment);
-            LOG.info("Determined target environment: " + this.currentEnvironment);
         }
         return currentEnvironment;
     }

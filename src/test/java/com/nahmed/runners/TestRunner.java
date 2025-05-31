@@ -32,15 +32,5 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     public Object[][] scenarios() {
         return super.scenarios();
     }
-/*
-    @BeforeSuite(alwaysRun = true)
-    public void initializeExtentReport() {
-        ExtentManager.initReports();
-    }
 
-    @AfterSuite(alwaysRun = true)
-    public void tearDownExtentReport() {
-        ExtentManager.flushReports();
-    }
-*/
 }
