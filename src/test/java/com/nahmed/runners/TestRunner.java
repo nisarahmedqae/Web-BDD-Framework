@@ -5,9 +5,6 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import com.nahmed.reports.ExtentManager;
 
 @CucumberOptions(
         plugin = {"pretty:reports/cucumber/cucumber.txt",

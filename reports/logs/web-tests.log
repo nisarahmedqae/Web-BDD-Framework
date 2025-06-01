@@ -1,135 +1,146 @@
-2025-06-01 02:22:11.212 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2025-06-01 14:35:46.205 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
 
-2025-06-01 02:22:11.646 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:22:11.646 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
-2025-06-01 02:22:11.646 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-31T20:52:11.646004100Z[0m
-2025-06-01 02:22:11.646 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:22:11.924 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:22:11.924 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
-2025-06-01 02:22:11.924 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
-2025-06-01 02:22:11.924 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
-2025-06-01 02:22:11.924 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:22:11.924 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
-2025-06-01 02:22:13.242 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
-2025-06-01 02:22:15.155 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
-2025-06-01 02:22:15.155 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:22:15.274 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:22:15.274 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
-2025-06-01 02:22:15.335 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
-2025-06-01 02:22:15.336 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
-2025-06-01 02:22:15.774 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
-2025-06-01 02:22:15.956 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:22:15.956 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
-2025-06-01 02:22:15.956 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Valid PageName" (Line: 16)[0m
-2025-06-01 02:22:15.956 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
-2025-06-01 02:22:15.956 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:22:15.958 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
-2025-06-01 02:22:17.050 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
-2025-06-01 02:22:19.977 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
-2025-06-01 02:22:19.979 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:22:20.088 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:22:20.088 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
-2025-06-01 02:22:20.141 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
-2025-06-01 02:22:20.142 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
-2025-06-01 02:22:20.336 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
-2025-06-01 02:22:20.448 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
-2025-06-01 02:22:20.448 [main] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Login test with different credentials "Valid PageName" --> PASSED[0m
-2025-06-01 02:22:20.448 [main] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 4.49 seconds[0m
-2025-06-01 02:22:20.448 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
-2025-06-01 02:22:20.448 [main] INFO  com.nahmed.listeners.TestListener - 
-2025-06-01 02:22:20.465 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:22:20.465 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
-2025-06-01 02:22:20.465 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
-2025-06-01 02:22:20.465 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-31T20:52:20.455008800Z[0m
-2025-06-01 02:22:20.465 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:23:39.060 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2025-06-01 14:35:46.806 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:35:46.806 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 14:35:46.806 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:05:46.806410300Z[0m
+2025-06-01 14:35:46.806 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:35:47.208 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:35:47.208 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 14:35:47.208 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 14:35:47.208 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 14:35:47.208 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:35:47.216 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 14:35:48.787 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 14:35:50.765 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 14:35:50.769 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:35:50.931 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:35:50.931 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 14:35:51.008 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 14:35:51.008 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 14:35:51.546 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page Name, Actual: Automation Practice
+	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:20)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:11)
+2025-06-01 14:35:51.546 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 14:35:51.730 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 14:35:51.730 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 14:35:51.730 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 4.63 seconds[0m
+2025-06-01 14:35:51.730 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 14:35:51.730 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 14:35:51.766 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:35:51.766 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 14:35:51.766 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 14:35:51.766 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:05:51.743203200Z[0m
+2025-06-01 14:35:51.766 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:37:20.881 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
 
-2025-06-01 02:23:39.500 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:23:39.500 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
-2025-06-01 02:23:39.500 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-31T20:53:39.500746500Z[0m
-2025-06-01 02:23:39.500 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:23:39.805 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:23:39.805 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
-2025-06-01 02:23:39.805 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
-2025-06-01 02:23:39.806 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
-2025-06-01 02:23:39.806 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:23:39.806 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:23:39.806 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
-2025-06-01 02:23:39.806 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Valid PageName" (Line: 16)[0m
-2025-06-01 02:23:39.806 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
-2025-06-01 02:23:39.806 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:23:39.808 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
-2025-06-01 02:23:39.808 [TestNG-PoolService-2] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
-2025-06-01 02:23:41.312 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
-2025-06-01 02:23:41.314 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
-2025-06-01 02:23:44.433 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
-2025-06-01 02:23:44.437 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:23:44.501 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
-2025-06-01 02:23:44.501 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:23:44.589 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:23:44.589 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
-2025-06-01 02:23:44.632 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:23:44.632 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
-2025-06-01 02:23:44.647 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
-2025-06-01 02:23:44.654 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
-2025-06-01 02:23:44.735 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
-2025-06-01 02:23:44.735 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
-2025-06-01 02:23:45.184 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
-2025-06-01 02:23:45.185 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
-2025-06-01 02:23:45.425 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
-2025-06-01 02:23:45.425 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Login test with different credentials "Valid PageName" --> PASSED[0m
-2025-06-01 02:23:45.425 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 5.71 seconds[0m
-2025-06-01 02:23:45.425 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
-2025-06-01 02:23:45.425 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - 
-2025-06-01 02:23:45.457 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:23:45.457 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
-2025-06-01 02:23:45.457 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
-2025-06-01 02:23:45.457 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-31T20:53:45.425593100Z[0m
-2025-06-01 02:23:45.457 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:24:35.103 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2025-06-01 14:37:21.551 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:37:21.551 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 14:37:21.551 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:07:21.551363400Z[0m
+2025-06-01 14:37:21.551 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:37:21.937 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:37:21.937 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 14:37:21.937 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 14:37:21.937 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 14:37:21.937 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:37:21.948 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 14:37:23.484 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 14:37:27.090 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 14:37:27.091 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:37:27.237 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:37:27.237 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 14:37:27.315 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 14:37:27.315 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 14:37:27.970 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page Name, Actual: Automation Practice
+	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:20)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:11)
+2025-06-01 14:37:27.976 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 14:37:28.147 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 14:37:28.150 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 14:37:28.160 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 6.31 seconds[0m
+2025-06-01 14:37:28.160 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 14:37:28.160 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 14:37:28.180 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:37:28.180 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 14:37:28.180 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Valid PageName" (Line: 16)[0m
+2025-06-01 14:37:28.180 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 14:37:28.180 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:37:28.180 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 14:37:30.135 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 14:37:32.451 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 14:37:32.452 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:37:32.614 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:37:32.621 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 14:37:32.710 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 14:37:32.711 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-01 14:37:32.993 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-01 14:37:33.151 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-01 14:37:33.151 [main] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Login test with different credentials "Valid PageName" --> PASSED[0m
+2025-06-01 14:37:33.151 [main] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 4.97 seconds[0m
+2025-06-01 14:37:33.151 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-01 14:37:33.151 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 14:37:33.173 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:37:33.173 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 14:37:33.173 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 14:37:33.173 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:07:33.155645Z[0m
+2025-06-01 14:37:33.173 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:39:48.102 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
 
-2025-06-01 02:24:35.553 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:24:35.553 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
-2025-06-01 02:24:35.553 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-31T20:54:35.553063200Z[0m
-2025-06-01 02:24:35.553 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:24:35.827 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:24:35.827 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
-2025-06-01 02:24:35.827 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
-2025-06-01 02:24:35.827 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
-2025-06-01 02:24:35.827 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:24:35.827 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
-2025-06-01 02:24:37.226 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
-2025-06-01 02:24:40.199 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
-2025-06-01 02:24:40.200 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:24:40.339 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:24:40.339 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
-2025-06-01 02:24:40.399 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
-2025-06-01 02:24:40.399 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
-2025-06-01 02:24:40.787 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
-2025-06-01 02:24:40.963 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:24:40.963 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
-2025-06-01 02:24:40.963 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Valid PageName" (Line: 16)[0m
-2025-06-01 02:24:40.963 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
-2025-06-01 02:24:40.963 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
-2025-06-01 02:24:40.963 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
-2025-06-01 02:24:42.051 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
-2025-06-01 02:24:46.067 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
-2025-06-01 02:24:46.070 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:24:46.197 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
-2025-06-01 02:24:46.197 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
-2025-06-01 02:24:46.249 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
-2025-06-01 02:24:46.249 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
-2025-06-01 02:24:46.475 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
-2025-06-01 02:24:46.684 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
-2025-06-01 02:24:46.684 [main] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Login test with different credentials "Valid PageName" --> PASSED[0m
-2025-06-01 02:24:46.684 [main] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 5.72 seconds[0m
-2025-06-01 02:24:46.684 [main] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
-2025-06-01 02:24:46.684 [main] INFO  com.nahmed.listeners.TestListener - 
-2025-06-01 02:24:46.706 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
-2025-06-01 02:24:46.706 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
-2025-06-01 02:24:46.706 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
-2025-06-01 02:24:46.706 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-05-31T20:54:46.690727300Z[0m
-2025-06-01 02:24:46.706 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:39:48.728 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:39:48.728 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 14:39:48.728 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:09:48.728098600Z[0m
+2025-06-01 14:39:48.728 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:39:49.159 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:39:49.160 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 14:39:49.160 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 14:39:49.160 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 14:39:49.160 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:39:49.161 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:39:49.161 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 14:39:49.161 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Valid PageName" (Line: 16)[0m
+2025-06-01 14:39:49.161 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 14:39:49.161 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 14:39:49.163 [TestNG-PoolService-2] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 14:39:49.163 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 14:39:51.208 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 14:39:51.208 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 14:39:52.710 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 14:39:52.711 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:39:53.282 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 14:39:53.286 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:39:53.511 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:39:53.511 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 14:39:53.519 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 14:39:53.523 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 14:39:53.615 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 14:39:53.617 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 14:39:53.618 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 14:39:53.618 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-01 14:39:53.828 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-01 14:39:54.251 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page Name, Actual: Automation Practice
+	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:20)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:11)
+2025-06-01 14:39:54.254 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 14:39:54.257 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-01 14:39:54.257 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Login test with different credentials "Valid PageName" --> PASSED[0m
+2025-06-01 14:39:54.258 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 5.20 seconds[0m
+2025-06-01 14:39:54.258 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-01 14:39:54.258 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 14:39:54.437 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 14:39:54.437 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 14:39:54.437 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 5.39 seconds[0m
+2025-06-01 14:39:54.437 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 14:39:54.437 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:09:54.443666800Z[0m
+2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m

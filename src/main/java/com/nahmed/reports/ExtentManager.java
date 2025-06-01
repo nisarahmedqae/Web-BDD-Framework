@@ -14,7 +14,7 @@ public final class ExtentManager {
         return extTest.get();
     }
 
-    static void setExtentTest(ExtentTest test) {
+    public static void setExtentTest(ExtentTest test) {
         extTest.set(test);
     }
 

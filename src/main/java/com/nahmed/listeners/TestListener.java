@@ -16,8 +16,8 @@ public class TestListener implements ConcurrentEventListener {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_BLUE = "\u001B[34m";
-    public static final String ANSI_YELLOW = "\u001B[33m"; // For skipped/pending/undefined
-    public static final String ANSI_PURPLE = "\u001B[35m"; // For overall run status
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
 
     @Override
     public void setEventPublisher(EventPublisher publisher) {
@@ -98,47 +98,51 @@ public class TestListener implements ConcurrentEventListener {
                     break;
                 case FAILED:
                     color = ANSI_RED;
-
-                    ExtentLogger.fail(stepDescription + " is FAILED", true); // Assuming 'true' is for screenshot
-                    //Throwable error = result.getError();
+                    ExtentLogger.fail(stepDescription + " is FAILED", true); // true for screenshot
                     if (error != null) {
-                        ExtentLogger.fail("Error: " + error.toString()); // Concise error message
+                        ExtentLogger.fail("Step Error Details: " + error.toString());
+                        LOG.error(color + "  Underlying Step Failure Cause: " + ANSI_RESET, error);
                     }
-
-                    LOG.error(color + statusPrefix + status + ": " + stepDescription + ANSI_RESET); // Log status line in red
+                    LOG.error(color + statusPrefix + status + ": " + stepDescription + ANSI_RESET); // Log the failing step description
                     break;
                 case SKIPPED:
                     color = ANSI_YELLOW;
                     ExtentLogger.skip(stepDescription + " is SKIPPED");
+                    if (error != null) {
+                        LOG.info(color + "  Reason for Skip: " + error.getMessage() + ANSI_RESET);
+                    }
+                    LOG.info(color + statusPrefix + status + ": " + stepDescription + ANSI_RESET);
                     break;
                 case PENDING:
                     color = ANSI_YELLOW;
                     ExtentLogger.skip(stepDescription + " is PENDING");
+                    LOG.info(color + statusPrefix + status + ": " + stepDescription + ANSI_RESET);
                     break;
                 case UNDEFINED:
                     color = ANSI_YELLOW;
                     ExtentLogger.skip(stepDescription + " is UNDEFINED (step definition missing)");
+                    LOG.info(color + statusPrefix + status + ": " + stepDescription + ANSI_RESET);
                     break;
                 case AMBIGUOUS:
-                    color = ANSI_YELLOW;
+                    color = ANSI_RED; // Treat ambiguous as a failure for console color
                     ExtentLogger.fail(stepDescription + " is AMBIGUOUS (multiple step definitions found)", true);
-                    Throwable ambiguousError = result.getError();
-                    if (ambiguousError != null) {
-                        ExtentLogger.fail("Error: " + ambiguousError.toString());
+                    if (result.getError() != null) { // Use result.getError() for ambiguous
+                        ExtentLogger.fail("Ambiguity Details: " + result.getError().toString());
+                        LOG.error(color + "  Ambiguity Cause: " + ANSI_RESET, result.getError());
                     }
+                    LOG.error(color + statusPrefix + status + ": " + stepDescription + ANSI_RESET);
                     break;
             }
         }
     }
 
-
     // --- Handler for Scenario Finished ---
     private void handleTestCaseFinished(TestCaseFinished event) {
+
         TestCase testCase = event.getTestCase();
+        String testCaseName = testCase.getName();
         Result result = event.getResult();
         Status status = result.getStatus();
-        Throwable error = result.getError();
-        String testCaseName = testCase.getName();
 
         String color = ANSI_RESET;
         String outcomePrefix = "Finished Scenario: ";
@@ -146,53 +150,30 @@ public class TestListener implements ConcurrentEventListener {
         switch (status) {
             case PASSED:
                 color = ANSI_GREEN;
-                ExtentLogger.pass(testCaseName + " is PASSED");
                 break;
             case FAILED:
                 color = ANSI_RED;
-                ExtentLogger.fail(testCaseName + " is FAILED", true); // Assuming 'true' is for screenshot
-                //Throwable error = result.getError();
-                if (error != null) {
-                    ExtentLogger.fail("Error: " + error.toString()); // Concise error message
-                }
                 break;
             case SKIPPED:
                 color = ANSI_YELLOW;
-                ExtentLogger.skip(testCaseName + " is SKIPPED");
                 break;
             case PENDING:
                 color = ANSI_YELLOW;
-                ExtentLogger.skip(testCaseName + " is PENDING");
                 break;
             case UNDEFINED:
                 color = ANSI_YELLOW;
-                ExtentLogger.skip(testCaseName + " is UNDEFINED (step definition missing)");
                 break;
             case AMBIGUOUS:
                 color = ANSI_YELLOW;
-                ExtentLogger.fail(testCaseName + " is AMBIGUOUS (multiple step definitions found)", true);
-                Throwable ambiguousError = result.getError();
-                if (ambiguousError != null) {
-                    ExtentLogger.fail("Error: " + ambiguousError.toString());
-                }
                 break;
         }
 
         LOG.info(color + "*****************************************************************************************" + ANSI_RESET);
         LOG.info(color + outcomePrefix + testCaseName + " --> " + status.name() + ANSI_RESET);
-        if (error != null) {
-            // Log error details also in the determined color (e.g., RED for FAILED)
-            LOG.error(color + "  Scenario Error Summary: " + error.getClass().getName() + ": " +
-                    (error.getMessage() != null ? error.getMessage().split(System.lineSeparator())[0] : "No message") +
-                    ANSI_RESET);
-            // Log the full stack trace for failures
-            if (status == Status.FAILED) {
-                LOG.error(ANSI_RED + "  Full Stack Trace for Scenario: " + testCaseName + ANSI_RESET, error);
-            }
-        }
         LOG.info(String.format("%s  Duration: %.2f seconds%s", color, result.getDuration().toMillis() / 1000.0, ANSI_RESET));
         LOG.info(color + "*****************************************************************************************" + ANSI_RESET);
-        LOG.info(""); // Add a blank line for separation
+        LOG.info("");
+
     }
 
     // --- Handler for Test Run Finished (Suite Finish) ---
