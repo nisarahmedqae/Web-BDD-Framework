@@ -144,3 +144,363 @@ java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page N
 2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
 2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:09:54.443666800Z[0m
 2025-06-01 14:39:54.455 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:07:43.432 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:07:43.849 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:07:43.849 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 15:07:43.849 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:37:43.849061800Z[0m
+2025-06-01 15:07:43.849 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:07:44.135 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:07:44.137 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 15:07:44.137 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 15:07:44.137 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 15:07:44.137 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:07:44.137 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 15:07:46.954 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 15:07:50.289 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 15:07:50.290 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:07:50.404 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:07:50.405 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 15:07:50.458 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 15:07:50.459 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:07:50.879 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page Name, Actual: Automation Practice
+	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:20)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:11)
+2025-06-01 15:07:50.879 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:07:51.048 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:07:51.048 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 15:07:51.048 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 6.99 seconds[0m
+2025-06-01 15:07:51.048 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:07:51.048 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 15:07:51.076 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:07:51.076 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 15:07:51.076 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 15:07:51.076 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:37:51.061154100Z[0m
+2025-06-01 15:07:51.076 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:14:47.763 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:14:48.178 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:14:48.178 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 15:14:48.178 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:44:48.178055900Z[0m
+2025-06-01 15:14:48.178 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:14:48.465 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:14:48.465 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 15:14:48.465 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 15:14:48.465 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 15:14:48.465 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:14:48.465 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 15:14:49.869 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 15:14:52.980 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 15:14:52.982 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:14:53.128 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:14:53.128 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 15:14:53.181 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 15:14:53.182 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:14:53.662 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page Name, Actual: Automation Practice
+	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:20)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:11)
+2025-06-01 15:14:53.664 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:14:53.828 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:14:53.828 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 15:14:53.828 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 5.43 seconds[0m
+2025-06-01 15:14:53.828 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:14:53.828 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 15:14:53.864 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:14:53.864 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 15:14:53.864 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 15:14:53.864 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:44:53.849203300Z[0m
+2025-06-01 15:14:53.864 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:15:59.523 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:15:59.953 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:15:59.953 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 15:15:59.958 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:45:59.953738200Z[0m
+2025-06-01 15:15:59.958 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:16:00.249 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:16:00.249 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 15:16:00.249 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 15:16:00.249 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 15:16:00.249 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:16:00.249 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 15:16:01.628 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 15:16:04.709 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 15:16:04.710 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:16:04.823 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:16:04.823 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 15:16:15.295 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#loginnn"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82fd2652486a7f4d3ca8d7d67aa7a3a4, findElement {using=id, value=loginnn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\iamni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62566}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62566/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82fd2652486a7f4d3ca8d7d67aa7a3a4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at com.nahmed.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:35)
+	at com.nahmed.utils.BrowserService.click(BrowserService.java:32)
+	at com.nahmed.pageobjects.LoginPage.clickOnLoginButton(LoginPage.java:34)
+	at com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton(LoginSteps.java:43)
+	at ✽.User click on the login button(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:10)
+2025-06-01 15:16:15.302 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: And User click on the login button[0m
+2025-06-01 15:16:15.322 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:16:15.322 [main] INFO  com.nahmed.listeners.TestListener - [33m  STEP SKIPPED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:16:15.589 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:16:15.589 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 15:16:15.589 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 15.42 seconds[0m
+2025-06-01 15:16:15.589 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:16:15.589 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 15:16:15.700 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:16:15.700 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 15:16:15.700 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 15:16:15.700 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T09:46:15.630755500Z[0m
+2025-06-01 15:16:15.700 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:39:26.980 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:39:27.418 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:39:27.418 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 15:39:27.418 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:09:27.418549200Z[0m
+2025-06-01 15:39:27.418 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:39:27.699 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:39:27.699 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 15:39:27.699 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 15:39:27.699 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 15:39:27.699 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:39:27.713 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 15:39:29.090 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 15:39:30.839 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 15:39:30.839 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:39:30.972 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:39:30.972 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 15:39:41.464 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#loginnn"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3114a2ed7b501189ea54cfc6c4e52d3, findElement {using=id, value=loginnn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\iamni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63007/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d3114a2ed7b501189ea54cfc6c4e52d3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at com.nahmed.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:35)
+	at com.nahmed.utils.BrowserService.click(BrowserService.java:32)
+	at com.nahmed.pageobjects.LoginPage.clickOnLoginButton(LoginPage.java:34)
+	at com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton(LoginSteps.java:43)
+	at ✽.User click on the login button(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:10)
+2025-06-01 15:39:41.472 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: And User click on the login button[0m
+2025-06-01 15:39:41.472 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:39:41.472 [main] INFO  com.nahmed.listeners.TestListener - [33m  STEP SKIPPED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:39:41.699 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:39:41.701 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 15:39:41.707 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 14.07 seconds[0m
+2025-06-01 15:39:41.707 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:39:41.707 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 15:39:41.789 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:39:41.789 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 15:39:41.789 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 15:39:41.789 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:09:41.731799100Z[0m
+2025-06-01 15:39:41.789 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:42:53.659 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:42:54.091 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:42:54.091 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 15:42:54.091 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:12:54.091276700Z[0m
+2025-06-01 15:42:54.091 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:42:54.392 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:42:54.394 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 15:42:54.394 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 15:42:54.394 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 15:42:54.394 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:42:54.394 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 15:42:55.737 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 15:42:58.605 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 15:42:58.610 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:42:58.731 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:42:58.731 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 15:43:09.204 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#loginnn"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dde7f9a09ca0f4d8397ba9684586d688, findElement {value=loginnn, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\iamni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63065/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dde7f9a09ca0f4d8397ba9684586d688
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at com.nahmed.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:35)
+	at com.nahmed.utils.BrowserService.click(BrowserService.java:32)
+	at com.nahmed.pageobjects.LoginPage.clickOnLoginButton(LoginPage.java:34)
+	at com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton(LoginSteps.java:43)
+	at ✽.User click on the login button(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:10)
+2025-06-01 15:43:09.204 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: And User click on the login button[0m
+2025-06-01 15:43:09.212 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:43:09.212 [main] INFO  com.nahmed.listeners.TestListener - [33m  STEP SKIPPED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:43:09.457 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:43:09.457 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 15:43:09.473 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 15.15 seconds[0m
+2025-06-01 15:43:09.478 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:43:09.480 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 15:43:09.566 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:43:09.566 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 15:43:09.568 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 15:43:09.568 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:13:09.513360700Z[0m
+2025-06-01 15:43:09.568 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:44:35.267 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:44:35.705 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:44:35.705 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 15:44:35.705 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:14:35.705196200Z[0m
+2025-06-01 15:44:35.705 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:44:35.981 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:44:35.981 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 15:44:35.981 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 15:44:35.981 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 15:44:35.981 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:44:35.981 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 15:44:37.347 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 15:44:40.125 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 15:44:40.126 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:44:40.245 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:44:40.245 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 15:44:50.746 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#loginnn"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c20f6988378ca9c48c0e91624e16b4fd, findElement {value=loginnn, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\iamni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63103}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63103/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c20f6988378ca9c48c0e91624e16b4fd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at com.nahmed.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:35)
+	at com.nahmed.utils.BrowserService.click(BrowserService.java:32)
+	at com.nahmed.pageobjects.LoginPage.clickOnLoginButton(LoginPage.java:34)
+	at com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton(LoginSteps.java:43)
+	at ✽.User click on the login button(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:10)
+2025-06-01 15:44:50.754 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: And User click on the login button[0m
+2025-06-01 15:44:50.754 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:44:50.754 [main] INFO  com.nahmed.listeners.TestListener - [33m  STEP SKIPPED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:44:50.961 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:44:50.961 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 15:44:50.961 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 15.06 seconds[0m
+2025-06-01 15:44:50.971 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:44:50.971 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 15:44:51.025 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:44:51.025 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 15:44:51.025 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 15:44:51.025 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:14:50.977734300Z[0m
+2025-06-01 15:44:51.025 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:47:56.398 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:47:56.486 [main] WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2025-06-01 15:50:54.044 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-01 15:50:54.488 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:50:54.488 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-01 15:50:54.488 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:20:54.488567400Z[0m
+2025-06-01 15:50:54.488 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:50:54.744 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:50:54.744 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-01 15:50:54.760 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "Invalid PageName" (Line: 15)[0m
+2025-06-01 15:50:54.760 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @login[0m
+2025-06-01 15:50:54.760 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-01 15:50:54.760 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-01 15:50:56.104 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-01 15:50:58.955 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-01 15:50:58.956 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:50:59.087 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-01 15:50:59.087 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-01 15:50:59.135 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-01 15:50:59.135 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:50:59.627 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page Name, Actual: Automation Practice
+	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:20)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:11)
+2025-06-01 15:50:59.627 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-01 15:50:59.778 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:50:59.778 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "Invalid PageName" --> FAILED[0m
+2025-06-01 15:50:59.778 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 5.09 seconds[0m
+2025-06-01 15:50:59.778 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-01 15:50:59.778 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-01 15:50:59.806 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-01 15:50:59.806 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-01 15:50:59.806 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-01 15:50:59.806 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-01T10:20:59.789804300Z[0m
+2025-06-01 15:50:59.806 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m

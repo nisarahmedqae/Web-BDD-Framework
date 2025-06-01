@@ -13,4 +13,4 @@ Feature: Application Login
     Examples:
       | description      | email                   | password | pagename            |
       | Invalid PageName | demo.testfire@gmail.com | Demo@123 | Invalid Page Name   |
-      | Valid PageName   | demo.testfire@gmail.com | Demo@123 | Automation Practice |
+      #| Valid PageName   | demo.testfire@gmail.com | Demo@123 | Automation Practice |

@@ -1,16 +1,9 @@
 
 @login
 Scenario Outline: Login test with different credentials "Invalid PageName" # src/test/java/com/nahmed/features/login.feature:15
-
-@login
-Scenario Outline: Login test with different credentials "Valid PageName"   # src/test/java/com/nahmed/features/login.feature:16
-  Given User is on the application login page                              # com.nahmed.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
   Given User is on the application login page                              # com.nahmed.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
   When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
-  When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
   And User click on the login button                                       # com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
-  And User click on the login button                                       # com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
-  Then User should be navigated to the homepage "Automation Practice"      # com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
   Then User should be navigated to the homepage "Invalid Page Name"        # com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
       java.lang.AssertionError: Verify Page Name of Home Page Expected: Invalid Page Name, Actual: Automation Practice
       	at com.nahmed.utils.AssertionService.assertEquals(AssertionService.java:7)
