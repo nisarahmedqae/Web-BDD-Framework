@@ -21,17 +21,17 @@ public class LoginPage {
 
     // Methods
     public LoginPage enterEmail(String email) {
-        browserService.sendKeys(emailTextbox, email, WaitStrategy.NONE, "Email textbox");
+        browserService.sendKeys(emailTextbox, email, WaitStrategy.NONE, 0, "Email");
         return this;
     }
 
     public LoginPage enterPassword(String password) {
-        browserService.sendKeys(passwordTextbox, password, WaitStrategy.NONE, "Password textbox");
+        browserService.sendKeys(passwordTextbox, password, WaitStrategy.NONE, 0, "Password");
         return this;
     }
 
     public LoginPage clickOnLoginButton() {
-        browserService.click(loginButton, WaitStrategy.NONE, "Login Button");
+        browserService.click(loginButton, WaitStrategy.NONE, 0, "Login Button");
         return this;
     }
 

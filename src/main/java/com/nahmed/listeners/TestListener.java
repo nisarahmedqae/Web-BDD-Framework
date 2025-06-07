@@ -127,7 +127,7 @@ public class TestListener implements ConcurrentEventListener {
             String stepDescription = getStepDescription(pickleStep);
             LOG.info(ANSI_BLUE + "  " + stepDescription + ANSI_RESET);
 
-            ExtentReport.addStep(stepDescription);
+            ExtentReport.addTestStep(stepDescription);
         }
     }
 
@@ -153,7 +153,7 @@ public class TestListener implements ConcurrentEventListener {
                     break;
                 case FAILED:
                     color = ANSI_RED;
-                    ExtentLogger.fail(stepDescription + " is FAILED", true); // true for screenshot
+                    ExtentLogger.fail(stepDescription + " is FAILED");
                     if (error != null) {
                         ExtentLogger.fail(error.toString());
                         LOG.error(color + "  Underlying Step Failure Cause: " + ANSI_RESET, error);
@@ -180,7 +180,7 @@ public class TestListener implements ConcurrentEventListener {
                     break;
                 case AMBIGUOUS:
                     color = ANSI_RED; // Treat ambiguous as a failure for console color
-                    ExtentLogger.fail(stepDescription + " is AMBIGUOUS (multiple step definitions found)", true);
+                    ExtentLogger.fail(stepDescription + " is AMBIGUOUS (multiple step definitions found)");
                     if (result.getError() != null) { // Use result.getError() for ambiguous
                         ExtentLogger.fail("Ambiguity Details: " + result.getError().toString());
                         LOG.error(color + "  Ambiguity Cause: " + ANSI_RESET, result.getError());

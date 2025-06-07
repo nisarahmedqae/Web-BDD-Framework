@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
                 "com.nahmed.events"},
         monochrome = true,
         snippets = SnippetType.CAMELCASE,
-        tags = "@login"
+        tags = "@regression"
 )
 
 @Listeners(com.nahmed.listeners.AnnotationTransformer.class)

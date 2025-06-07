@@ -1,3 +1,4 @@
+@regression
 Feature: Application Login
   As a registered user
   I want to log in to the application
@@ -11,6 +12,6 @@ Feature: Application Login
     Then User should be navigated to the homepage "<pagename>"
 
     Examples:
-      | description      | email                   | password | pagename            |
-      | Invalid PageName | demo.testfire@gmail.com | Demo@123 | Invalid Page Name   |
-      #| Valid PageName   | demo.testfire@gmail.com | Demo@123 | Automation Practice |
+      | description | email                   | password | pagename            |
+      | TC01        | demo.testfire@gmail.com | Demo@123 | Invalid Page Name   |
+      | TC02        | demo.testfire@gmail.com | Demo@123 | Automation Practice |

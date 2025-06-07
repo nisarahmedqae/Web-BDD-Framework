@@ -25,7 +25,7 @@ public final class PropertyUtils {
             prop.load(fis);
 
             for (Map.Entry<Object, Object> entry : prop.entrySet()) {
-                CONFIGMAP.put(entry.getKey().toString().trim().toLowerCase(), entry.getValue().toString().trim().toLowerCase());
+                CONFIGMAP.put(entry.getKey().toString().toLowerCase(), entry.getValue().toString());
             }
 
         } catch (IOException e) {
@@ -35,19 +35,19 @@ public final class PropertyUtils {
     }
 
     public static String getValue(ConfigProperties key) {
-        if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.toString().trim().toLowerCase()))) {
+        if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.toString().toLowerCase()))) {
             throw new PropertyFileUsageException(
                     "Property name " + key + " is not found. Please check config.properties");
         }
-        return CONFIGMAP.get(key.toString().trim().toLowerCase());
+        return CONFIGMAP.get(key.toString().toLowerCase());
     }
 
     public static String getValue(String key) {
-        if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.trim().toLowerCase()))) {
+        if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.toLowerCase()))) {
             throw new PropertyFileUsageException(
                     "Property name" + key + " is not found. Please check config.properties");
         }
-        return CONFIGMAP.get(key.trim().toLowerCase());
+        return CONFIGMAP.get(key.toLowerCase());
     }
 
 }

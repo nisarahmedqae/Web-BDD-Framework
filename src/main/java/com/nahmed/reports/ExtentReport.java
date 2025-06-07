@@ -10,7 +10,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.nahmed.constants.FrameworkConstants;
-import com.nahmed.enums.CategoryType;
 
 public final class ExtentReport {
 
@@ -50,7 +49,7 @@ public final class ExtentReport {
         ExtentManager.setExtentTest(scenarioTest); // Set scenario as current test in ExtentManager
     }
 
-    public static void addStep(String stepDescription) {
+    public static void addTestStep(String stepDescription) {
         ExtentTest currentScenario = ExtentStepManager.getExtentTestStep();
         if (currentScenario != null) {
             ExtentTest stepTest = currentScenario.createNode(stepDescription);

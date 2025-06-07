@@ -1,15 +1,13 @@
 package com.nahmed.utils;
 
 import com.nahmed.enums.ConfigProperties;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class TestContext {
 
-    public Map<String, Object> sessionMap = new HashMap<>();
+    public Map<String, Object> sessionMap = new ConcurrentHashMap<>();
 
     // Constants for environment selection
     private static final String ENV_SYSTEM_PROPERTY = "env"; // System property: -Denv=CERT
