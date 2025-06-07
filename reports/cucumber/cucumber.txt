@@ -2,26 +2,20 @@
 @regression @addingProductToCart
 Scenario Outline: Adding "IPHONE 13 PRO" to the cart for "TC01"          # src/test/java/com/nahmed/features/products.feature:17
 
-@regression @login
-Scenario Outline: Login test with different credentials "TC01"             # src/test/java/com/nahmed/features/login.feature:16
-
-@regression @addingProductToCart
-Scenario Outline: Adding "ADIDAS ORIGINAL" to the cart for "TC03"          # src/test/java/com/nahmed/features/products.feature:19
-
 @regression @addingProductToCart
 Scenario Outline: Adding "ZARA COAT 3" to the cart for "TC02"          # src/test/java/com/nahmed/features/products.feature:18
 
 @regression @login
 Scenario Outline: Login test with different credentials "TC02"             # src/test/java/com/nahmed/features/login.feature:17
-  Given User is on the application login page                              # com.nahmed.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
+
+@regression @login
+Scenario Outline: Login test with different credentials "TC01"             # src/test/java/com/nahmed/features/login.feature:16
+
+@regression @addingProductToCart
+Scenario Outline: Adding "ADIDAS ORIGINAL" to the cart for "TC03"          # src/test/java/com/nahmed/features/products.feature:19
   Given User is on the application login page                              # com.nahmed.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
   When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
-  When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
   And User click on the login button                                       # com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
-  And User click on the login button                                       # com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
-  Then User should be navigated to the homepage "Automation Practice"      # com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
-  Given the user is logged into the application                        # com.nahmed.stepdefinitions.LoginSteps.theUserIsLoggedIntoTheApplication()
-  Given the user is logged into the application                            # com.nahmed.stepdefinitions.LoginSteps.theUserIsLoggedIntoTheApplication()
   Then User should be navigated to the homepage "Invalid Page Name"        # com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
       java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
       	at org.testng.Assert.fail(Assert.java:111)
@@ -32,15 +26,21 @@ Scenario Outline: Login test with different credentials "TC02"             # src
       	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:24)
       	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
   Given the user is logged into the application                          # com.nahmed.stepdefinitions.LoginSteps.theUserIsLoggedIntoTheApplication()
-  When the user clicks on Add to Cart button for product "ZARA COAT 3" # com.nahmed.stepdefinitions.HomeSteps.theUserClicksOnAddToCartButtonForProduct(java.lang.String)
-  And the user navigates to the Cart page                              # com.nahmed.stepdefinitions.CartSteps.theUserNavigatesToTheCartPage()
-  Then the product "ZARA COAT 3" should be visible in the cart         # com.nahmed.stepdefinitions.CartSteps.theProductShouldBeVisibleInTheCart(java.lang.String)
-  And the product "ZARA COAT 3" price should be "31500"                # com.nahmed.stepdefinitions.CartSteps.theProductPriceShouldBe(java.lang.String,java.lang.String)
+  Given the user is logged into the application                        # com.nahmed.stepdefinitions.LoginSteps.theUserIsLoggedIntoTheApplication()
+  Given User is on the application login page                              # com.nahmed.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
+  When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
+  Given the user is logged into the application                            # com.nahmed.stepdefinitions.LoginSteps.theUserIsLoggedIntoTheApplication()
+  And User click on the login button                                       # com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton()
+  Then User should be navigated to the homepage "Automation Practice"      # com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(java.lang.String)
   When the user clicks on Add to Cart button for product "ADIDAS ORIGINAL" # com.nahmed.stepdefinitions.HomeSteps.theUserClicksOnAddToCartButtonForProduct(java.lang.String)
-  When the user clicks on Add to Cart button for product "IPHONE 13 PRO" # com.nahmed.stepdefinitions.HomeSteps.theUserClicksOnAddToCartButtonForProduct(java.lang.String)
   And the user navigates to the Cart page                                  # com.nahmed.stepdefinitions.CartSteps.theUserNavigatesToTheCartPage()
   Then the product "ADIDAS ORIGINAL" should be visible in the cart         # com.nahmed.stepdefinitions.CartSteps.theProductShouldBeVisibleInTheCart(java.lang.String)
   And the product "ADIDAS ORIGINAL" price should be "31500"                # com.nahmed.stepdefinitions.CartSteps.theProductPriceShouldBe(java.lang.String,java.lang.String)
+  When the user clicks on Add to Cart button for product "ZARA COAT 3" # com.nahmed.stepdefinitions.HomeSteps.theUserClicksOnAddToCartButtonForProduct(java.lang.String)
+  When the user clicks on Add to Cart button for product "IPHONE 13 PRO" # com.nahmed.stepdefinitions.HomeSteps.theUserClicksOnAddToCartButtonForProduct(java.lang.String)
+  And the user navigates to the Cart page                              # com.nahmed.stepdefinitions.CartSteps.theUserNavigatesToTheCartPage()
+  Then the product "ZARA COAT 3" should be visible in the cart         # com.nahmed.stepdefinitions.CartSteps.theProductShouldBeVisibleInTheCart(java.lang.String)
   And the user navigates to the Cart page                                # com.nahmed.stepdefinitions.CartSteps.theUserNavigatesToTheCartPage()
+  And the product "ZARA COAT 3" price should be "31500"                # com.nahmed.stepdefinitions.CartSteps.theProductPriceShouldBe(java.lang.String,java.lang.String)
   Then the product "IPHONE 13 PRO" should be visible in the cart         # com.nahmed.stepdefinitions.CartSteps.theProductShouldBeVisibleInTheCart(java.lang.String)
   And the product "IPHONE 13 PRO" price should be "231500"               # com.nahmed.stepdefinitions.CartSteps.theProductPriceShouldBe(java.lang.String,java.lang.String)
