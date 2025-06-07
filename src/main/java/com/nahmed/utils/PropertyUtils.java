@@ -45,7 +45,7 @@ public final class PropertyUtils {
     public static String getValue(String key) {
         if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.toLowerCase()))) {
             throw new PropertyFileUsageException(
-                    "Property name" + key + " is not found. Please check config.properties");
+                    "Property name " + key + " is not found. Please check config.properties");
         }
         return CONFIGMAP.get(key.toLowerCase());
     }

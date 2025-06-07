@@ -32,6 +32,8 @@ public class LoginSteps {
     @Given("User is on the application login page")
     public void userIsOnTheApplicationLoginPage() {
         String url = PropertyUtils.getValue(ConfigProperties.URL + testContext.getCurrentEnvironment());
+        System.out.println(url);
+        System.out.println(ConfigProperties.URL + testContext.getCurrentEnvironment());
         browserService.openUrl(url);
     }
 

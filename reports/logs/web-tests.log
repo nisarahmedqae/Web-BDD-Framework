@@ -4102,3 +4102,213 @@ java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page N
 2025-06-07 15:41:05.252 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
 2025-06-07 15:41:05.263 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T10:11:05.204506500Z[0m
 2025-06-07 15:41:05.263 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:10:53.538 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-07 18:10:54.165 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:10:54.165 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-07 18:10:54.182 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T12:40:54.165850700Z[0m
+2025-06-07 18:10:54.182 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:10:54.606 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.606 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [34mFeature: products.feature[0m
+2025-06-07 18:10:54.606 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Adding "ZARA COAT 3" to the cart for "TC02" (Line: 18)[0m
+2025-06-07 18:10:54.606 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @addingProductToCart[0m
+2025-06-07 18:10:54.606 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC01" (Line: 16)[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-07 18:10:54.622 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34mFeature: products.feature[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Adding "ADIDAS ORIGINAL" to the cart for "TC03" (Line: 19)[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @addingProductToCart[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [34mFeature: products.feature[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Adding "IPHONE 13 PRO" to the cart for "TC01" (Line: 17)[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @addingProductToCart[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.622 [TestNG-PoolService-3] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-07 18:10:54.628 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.629 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-07 18:10:54.629 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC02" (Line: 17)[0m
+2025-06-07 18:10:54.629 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-07 18:10:54.629 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:10:54.629 [TestNG-PoolService-5] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-07 18:10:54.629 [TestNG-PoolService-4] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-07 18:10:54.629 [TestNG-PoolService-2] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-07 18:11:01.130 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [34m  Given the user is logged into the application[0m
+2025-06-07 18:11:01.133 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34m  Given the user is logged into the application[0m
+2025-06-07 18:11:01.148 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [34m  Given the user is logged into the application[0m
+2025-06-07 18:11:01.173 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-07 18:11:01.177 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-07 18:11:02.968 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-07 18:11:02.968 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:11:02.991 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-07 18:11:02.991 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:11:03.228 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:11:03.228 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-07 18:11:03.240 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:11:03.240 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-07 18:11:03.358 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-07 18:11:03.358 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-07 18:11:03.366 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-07 18:11:03.366 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-07 18:11:03.600 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - Login Successfully
+2025-06-07 18:11:03.602 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given the user is logged into the application[0m
+2025-06-07 18:11:03.602 [TestNG-PoolService-3] INFO  com.nahmed.listeners.TestListener - [34m  When the user clicks on Add to Cart button for product "IPHONE 13 PRO"[0m
+2025-06-07 18:11:03.668 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-07 18:11:05.662 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:24)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
+2025-06-07 18:11:05.670 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-07 18:11:05.681 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-07 18:11:05.681 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: Login test with different credentials "TC02" --> PASSED[0m
+2025-06-07 18:11:05.696 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 11.15 seconds[0m
+2025-06-07 18:11:05.696 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-07 18:11:05.696 [TestNG-PoolService-2] INFO  com.nahmed.listeners.TestListener - 
+2025-06-07 18:11:06.038 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-07 18:11:06.038 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "TC01" --> FAILED[0m
+2025-06-07 18:11:06.045 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 11.43 seconds[0m
+2025-06-07 18:11:06.045 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-07 18:11:06.045 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-06-07 18:11:06.603 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - Login Successfully
+2025-06-07 18:11:06.605 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given the user is logged into the application[0m
+2025-06-07 18:11:06.608 [TestNG-PoolService-4] INFO  com.nahmed.listeners.TestListener - [34m  When the user clicks on Add to Cart button for product "ZARA COAT 3"[0m
+2025-06-07 18:11:06.612 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - Login Successfully
+2025-06-07 18:11:06.614 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given the user is logged into the application[0m
+2025-06-07 18:11:06.614 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34m  When the user clicks on Add to Cart button for product "ADIDAS ORIGINAL"[0m
+2025-06-07 18:11:08.645 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - Product Added To Cart
+2025-06-07 18:11:08.645 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When the user clicks on Add to Cart button for product "ADIDAS ORIGINAL"[0m
+2025-06-07 18:11:08.645 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34m  And the user navigates to the Cart page[0m
+2025-06-07 18:11:09.465 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And the user navigates to the Cart page[0m
+2025-06-07 18:11:09.465 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34m  Then the product "ADIDAS ORIGINAL" should be visible in the cart[0m
+2025-06-07 18:11:09.645 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then the product "ADIDAS ORIGINAL" should be visible in the cart[0m
+2025-06-07 18:11:09.645 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [34m  And the product "ADIDAS ORIGINAL" price should be "31500"[0m
+2025-06-07 18:11:09.712 [TestNG-PoolService-5] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And the product "ADIDAS ORIGINAL" price should be "31500"[0m
+2025-06-07 18:11:59.328 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-07 18:12:00.070 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:12:00.070 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-07 18:12:00.070 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T12:42:00.070296500Z[0m
+2025-06-07 18:12:00.072 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:12:00.607 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:12:00.607 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-07 18:12:00.607 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC01" (Line: 16)[0m
+2025-06-07 18:12:00.607 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-07 18:12:00.607 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:12:00.607 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - CERTIFICATION environment selected
+2025-06-07 18:12:02.676 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-07 18:12:05.527 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-07 18:12:05.530 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:27:30.954 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-07 18:27:31.395 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:27:31.395 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-07 18:27:31.395 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T12:57:31.395803700Z[0m
+2025-06-07 18:27:31.395 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:27:31.701 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:27:31.703 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-07 18:27:31.703 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC01" (Line: 16)[0m
+2025-06-07 18:27:31.703 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-07 18:27:31.703 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:27:31.703 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - CERTIFICATION environment selected
+2025-06-07 18:27:33.039 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-07 18:27:36.605 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-07 18:27:36.606 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:27:47.817 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userEmail"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [029bd0d7021efa8b8542a76e4a6737a7, findElement {value=userEmail, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\iamni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60657}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60657/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 029bd0d7021efa8b8542a76e4a6737a7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at com.nahmed.factories.ExplicitWaitFactory.performExplicitWaitForElement(ExplicitWaitFactory.java:35)
+	at com.nahmed.utils.BrowserService.sendKeys(BrowserService.java:44)
+	at com.nahmed.pageobjects.LoginPage.enterEmail(LoginPage.java:24)
+	at com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(LoginSteps.java:42)
+	at ✽.User enters email "demo.testfire@gmail.com" and password "Demo@123"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:10)
+2025-06-07 18:27:47.819 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:27:47.823 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-07 18:27:48.376 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [33m  STEP SKIPPED: And User click on the login button[0m
+2025-06-07 18:27:48.376 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-07 18:27:48.956 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [33m  STEP SKIPPED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-07 18:27:49.108 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-07 18:27:49.108 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "TC01" --> FAILED[0m
+2025-06-07 18:27:49.108 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 17.49 seconds[0m
+2025-06-07 18:27:49.108 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-07 18:27:49.108 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-06-07 18:27:49.138 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:27:49.138 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-07 18:27:49.138 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-07 18:27:49.138 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T12:57:49.119983300Z[0m
+2025-06-07 18:27:49.138 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:31:29.705 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-07 18:31:30.133 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:31:30.133 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-07 18:31:30.133 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T13:01:30.133449600Z[0m
+2025-06-07 18:31:30.133 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:31:30.428 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:31:30.428 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-07 18:31:30.428 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC01" (Line: 16)[0m
+2025-06-07 18:31:30.428 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-07 18:31:30.428 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-07 18:31:30.428 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-07 18:31:31.829 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-07 18:31:34.988 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-07 18:31:34.988 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:31:35.117 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-07 18:31:35.117 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-07 18:31:35.170 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-07 18:31:35.171 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-07 18:31:35.950 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:24)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
+2025-06-07 18:31:35.958 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-07 18:31:36.125 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-07 18:31:36.125 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "TC01" --> FAILED[0m
+2025-06-07 18:31:36.125 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 5.78 seconds[0m
+2025-06-07 18:31:36.125 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-07 18:31:36.125 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T13:01:36.138160100Z[0m
+2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m

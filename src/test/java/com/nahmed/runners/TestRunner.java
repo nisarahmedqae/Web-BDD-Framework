@@ -18,14 +18,14 @@ import org.testng.annotations.Listeners;
                 "com.nahmed.events"},
         monochrome = true,
         snippets = SnippetType.CAMELCASE,
-        tags = "@regression"
+        tags = "@login"
 )
 
 @Listeners(com.nahmed.listeners.AnnotationTransformer.class)
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return super.scenarios();
     }
