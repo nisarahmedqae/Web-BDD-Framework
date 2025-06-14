@@ -1,6 +1,6 @@
 
 @regression @login
-Scenario Outline: Login test with different credentials "TC01"             # src/test/java/com/nahmed/features/login.feature:16
+Scenario Outline: TC01 Login test with different credentials               # src/test/java/com/nahmed/features/login.feature:16
   Given User is on the application login page                              # com.nahmed.stepdefinitions.LoginSteps.userIsOnTheApplicationLoginPage()
   When User enters email "demo.testfire@gmail.com" and password "Demo@123" # com.nahmed.stepdefinitions.LoginSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)
   And User click on the login button                                       # com.nahmed.stepdefinitions.LoginSteps.userClickOnTheLoginButton()

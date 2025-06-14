@@ -14,7 +14,7 @@ import org.testng.annotations.Listeners;
                 "rerun:reports/cucumber/rerun.txt",
                 "com.nahmed.listeners.TestListener"
         },
-        features = {"src/test/java/com/nahmed/features"},
+        features = {"@reports/cucumber/rerun.txt"},
         glue = {"com.nahmed.stepdefinitions",
                 "com.nahmed.events"},
         monochrome = true,
@@ -23,7 +23,7 @@ import org.testng.annotations.Listeners;
 )
 
 @Listeners(com.nahmed.listeners.AnnotationTransformer.class)
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class FailedTestRunner extends AbstractTestNGCucumberTests {
 
     @Override
     @DataProvider(parallel = false)
