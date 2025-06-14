@@ -1,5 +1,6 @@
 package com.nahmed.runners;
 
+import com.nahmed.listeners.AnnotationTransformer;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
@@ -21,7 +22,7 @@ import org.testng.annotations.Listeners;
         tags = "@login"
 )
 
-@Listeners(com.nahmed.listeners.AnnotationTransformer.class)
+@Listeners({AnnotationTransformer.class})
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override

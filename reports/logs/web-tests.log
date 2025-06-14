@@ -4312,3 +4312,127 @@ java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page N
 2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
 2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-07T13:01:36.138160100Z[0m
 2025-06-07 18:31:36.156 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 10:54:27.534 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-14 10:54:28.259 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 10:54:28.259 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-14 10:54:28.259 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-14T05:24:28.259046800Z[0m
+2025-06-14 10:54:28.259 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 10:54:28.727 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-14 10:54:28.727 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-14 10:54:28.727 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC01" (Line: 16)[0m
+2025-06-14 10:54:28.727 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-14 10:54:28.727 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-14 10:54:28.729 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-14 10:54:46.264 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-14 10:54:46.986 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-14 10:54:46.991 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-14 10:54:47.316 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-14 10:54:47.316 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-14 10:54:47.494 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-14 10:54:47.494 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-14 10:54:48.767 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:24)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
+2025-06-14 10:54:48.783 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-14 10:54:49.129 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-14 10:54:49.129 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "TC01" --> FAILED[0m
+2025-06-14 10:54:49.146 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 20.51 seconds[0m
+2025-06-14 10:54:49.146 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-14 10:54:49.146 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-14 10:54:49.262 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 10:54:49.262 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-14 10:54:49.262 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-14 10:54:49.262 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-14T05:24:49.171548600Z[0m
+2025-06-14 10:54:49.262 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:11:16.317 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-14 11:11:16.957 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:11:16.957 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-14 11:11:16.957 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-14T05:41:16.957086600Z[0m
+2025-06-14 11:11:16.957 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:11:17.321 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-14 11:11:17.321 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-14 11:11:17.321 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC01" (Line: 16)[0m
+2025-06-14 11:11:17.321 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-14 11:11:17.321 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-14 11:11:17.321 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-14 11:11:18.947 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-14 11:11:21.834 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-14 11:11:21.834 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-14 11:11:22.012 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-14 11:11:22.014 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-14 11:11:22.102 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-14 11:11:22.102 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-14 11:11:22.956 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:24)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
+2025-06-14 11:11:22.956 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-14 11:11:23.165 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-14 11:11:23.165 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "TC01" --> FAILED[0m
+2025-06-14 11:11:23.165 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 5.93 seconds[0m
+2025-06-14 11:11:23.165 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-14 11:11:23.165 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-14 11:11:23.192 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:11:23.192 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-14 11:11:23.192 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-14 11:11:23.192 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-14T05:41:23.176926800Z[0m
+2025-06-14 11:11:23.192 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:17:15.014 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-14 11:17:15.147 [main] WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2025-06-14 11:31:25.450 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-14 11:31:26.081 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:31:26.081 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-14 11:31:26.081 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-14T06:01:26.081013200Z[0m
+2025-06-14 11:31:26.081 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:31:26.460 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-14 11:31:26.460 [main] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-14 11:31:26.460 [main] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: Login test with different credentials "TC01" (Line: 16)[0m
+2025-06-14 11:31:26.460 [main] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-14 11:31:26.460 [main] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-14 11:31:26.460 [main] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-14 11:31:27.969 [main] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-14 11:31:31.243 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-14 11:31:31.243 [main] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-14 11:31:31.388 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-14 11:31:31.388 [main] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-14 11:31:31.447 [main] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-14 11:31:31.447 [main] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-14 11:31:32.516 [main] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:24)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
+2025-06-14 11:31:32.516 [main] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-14 11:31:32.757 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-14 11:31:32.757 [main] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: Login test with different credentials "TC01" --> FAILED[0m
+2025-06-14 11:31:32.757 [main] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 6.39 seconds[0m
+2025-06-14 11:31:32.757 [main] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-14 11:31:32.757 [main] INFO  com.nahmed.listeners.TestListener - 
+2025-06-14 11:31:32.846 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-14 11:31:32.846 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-14 11:31:32.846 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-14 11:31:32.846 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-14T06:01:32.789885700Z[0m
+2025-06-14 11:31:32.846 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
