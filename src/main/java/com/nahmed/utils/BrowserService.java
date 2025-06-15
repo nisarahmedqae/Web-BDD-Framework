@@ -5,8 +5,11 @@ import com.nahmed.enums.WaitStrategy;
 import com.nahmed.factories.ExplicitWaitFactory;
 import com.nahmed.reports.ExtentLogger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class BrowserService {
@@ -94,6 +97,12 @@ public class BrowserService {
             ExtentLogger.fail("Element '" + invisibleElement + "' did not disappear. Skipping click on " + elementName);
             throw new RuntimeException("Element not invisible, cannot click: " + elementName);
         }
+    }
+
+    public void waitForPageLoad() {
+        new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(30))
+                .until(d -> ((JavascriptExecutor) d)
+                        .executeScript("return document.readyState").equals("complete"));
     }
 
 

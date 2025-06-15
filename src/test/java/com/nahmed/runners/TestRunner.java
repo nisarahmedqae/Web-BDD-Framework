@@ -4,7 +4,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 
 @CucumberOptions(
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
@@ -17,16 +16,21 @@ import org.testng.annotations.Listeners;
                 "com.nahmed.events"},
         monochrome = true,
         snippets = SnippetType.CAMELCASE,
-        tags = "@login"
+        tags = "@regression"
 )
 
-@Listeners(com.nahmed.listeners.AnnotationTransformer.class)
 public class TestRunner extends AbstractTestNGCucumberTests {
 
+    // 1. Parallel Execution Control
     @Override
-    @DataProvider(parallel = false)
+    @DataProvider(parallel = true)
     public Object[][] scenarios() {
         return super.scenarios();
+    }
+
+    // 2. Thread Count Configuration
+    static {
+        System.setProperty("dataproviderthreadcount", "1");
     }
 
 }
