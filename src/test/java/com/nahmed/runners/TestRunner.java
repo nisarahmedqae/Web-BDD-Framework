@@ -7,11 +7,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 
 @CucumberOptions(
-        plugin = {"pretty:reports/cucumber/cucumber.txt",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "html:reports/cucumber/report.html",
-                "json:reports/cucumber/cucumber.json",
-                "rerun:reports/cucumber/rerun.txt",
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "html:reports/cucumber/bdd_report.html",
+                "rerun:reports/cucumber/rerun_data.txt",
                 "com.nahmed.listeners.TestListener"
         },
         features = {"src/test/java/com/nahmed/features"},

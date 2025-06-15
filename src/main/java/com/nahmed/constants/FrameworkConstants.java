@@ -11,7 +11,7 @@ public final class FrameworkConstants {
 
     private static final String RESOURCESPATH = System.getProperty("user.dir") + "/src/test/resources";
     private static final String CONFIGFILEPATH = RESOURCESPATH + "/config.properties";
-    private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir") + "/reports/extent-test-output";
+    private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir") + "/reports/extent";
 
     private static String extentReportFilePath = "";
 
@@ -24,9 +24,9 @@ public final class FrameworkConstants {
 
     public static String createReportPath() {
         if (PropertyUtils.getValue(ConfigProperties.OVER_RIDE_REPORTS).equalsIgnoreCase("no")) {
-            return EXTENTREPORTFOLDERPATH + "/" + System.currentTimeMillis() + "index.html";
+            return EXTENTREPORTFOLDERPATH + "/" + System.currentTimeMillis() + "extent.html";
         } else {
-            return EXTENTREPORTFOLDERPATH + "/" + "index.html";
+            return EXTENTREPORTFOLDERPATH + "/" + "extent.html";
         }
     }
 
