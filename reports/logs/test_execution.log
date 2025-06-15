@@ -1,0 +1,59 @@
+2025-06-15 14:05:42.236 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-06-15 14:05:42.906 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-15 14:05:42.906 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-06-15 14:05:42.906 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-15T08:35:42.906522500Z[0m
+2025-06-15 14:05:42.906 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-15 14:05:43.282 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-15 14:05:43.283 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-15 14:05:43.283 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: TC01 Login test with different credentials (Line: 16)[0m
+2025-06-15 14:05:43.283 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-15 14:05:43.283 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-15 14:05:43.286 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-15 14:05:44.863 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-15 14:05:48.514 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-15 14:05:48.516 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-15 14:05:48.671 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-15 14:05:48.672 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-15 14:05:48.759 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-15 14:05:48.760 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-15 14:05:49.855 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:24)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
+2025-06-15 14:05:49.855 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-06-15 14:05:50.136 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-15 14:05:50.136 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: TC01 Login test with different credentials --> FAILED[0m
+2025-06-15 14:05:50.136 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 6.94 seconds[0m
+2025-06-15 14:05:50.136 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-06-15 14:05:50.136 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-06-15 14:05:50.183 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-15 14:05:50.183 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-06-15 14:05:50.183 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: TC02 Login test with different credentials (Line: 17)[0m
+2025-06-15 14:05:50.183 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-06-15 14:05:50.183 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-06-15 14:05:50.183 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - INTEGRATION environment selected
+2025-06-15 14:05:51.591 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-06-15 14:05:54.619 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-06-15 14:05:54.619 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-15 14:05:54.829 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-06-15 14:05:54.831 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-06-15 14:05:54.976 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-06-15 14:05:54.977 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-15 14:05:55.175 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
+2025-06-15 14:05:55.340 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-15 14:05:55.340 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: TC02 Login test with different credentials --> PASSED[0m
+2025-06-15 14:05:55.341 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 5.16 seconds[0m
+2025-06-15 14:05:55.341 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-06-15 14:05:55.341 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-06-15 14:05:55.351 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-06-15 14:05:55.351 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-06-15 14:05:55.351 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-06-15 14:05:55.352 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-15T08:35:55.344733600Z[0m
+2025-06-15 14:05:55.352 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m

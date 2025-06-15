@@ -3,7 +3,7 @@
     <!-- Define properties -->
     <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
     <property name="LOG_DIR" value="logs"/> <!-- Log directory relative to project root -->
-    <property name="LOG_FILE" value="reports/${LOG_DIR}/test-execution.log"/>
+    <property name="LOG_FILE" value="reports/${LOG_DIR}/test_execution.log"/>
 
     <!-- Appender for Console Output -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">

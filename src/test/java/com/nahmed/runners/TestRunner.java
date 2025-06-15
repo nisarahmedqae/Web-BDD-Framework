@@ -16,7 +16,7 @@ import org.testng.annotations.DataProvider;
                 "com.nahmed.events"},
         monochrome = true,
         snippets = SnippetType.CAMELCASE,
-        tags = "@regression"
+        tags = "@login"
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {

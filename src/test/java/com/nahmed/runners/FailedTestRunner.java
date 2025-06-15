@@ -15,8 +15,7 @@ import org.testng.annotations.DataProvider;
         glue = {"com.nahmed.stepdefinitions",
                 "com.nahmed.events"},
         monochrome = true,
-        snippets = SnippetType.CAMELCASE,
-        tags = "@login"
+        snippets = SnippetType.CAMELCASE
 )
 
 public class FailedTestRunner extends AbstractTestNGCucumberTests {
