@@ -9,10 +9,8 @@ public class TestContext {
 
     public Map<String, Object> sessionMap = new ConcurrentHashMap<>();
 
-    // Constants for environment selection
+    // Environment selection
     private static final String ENV_SYSTEM_PROPERTY = "env"; // System property: -Denv=CERT
-
-    // Store the determined environment for potential use elsewhere (like Hooks)
     private String currentEnvironment = null;
 
     // Method to get the determined environment if needed elsewhere safely
