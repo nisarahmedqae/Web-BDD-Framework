@@ -143,7 +143,7 @@ mvn test -Denv=cert
 
 #### Running Specific Tags
 
-Modify `testng.xml` or use Cucumber options:
+Use Cucumber options:
 
 ```java
 @CucumberOptions(tags = "@login")
@@ -152,8 +152,8 @@ Modify `testng.xml` or use Cucumber options:
 ### 5. Viewing Results
 
 After execution, reports are generated in:
-- `reports/extent-test-output/index.html` (or timestamped version)
-- `reports/logs/web-tests.log`
+- `reports/extent/extent.html` (or timestamped version)
+- `reports/logs/test-execution.log`
 
 ## Key Configuration Options
 
@@ -163,8 +163,6 @@ After execution, reports are generated in:
 | over_ride_reports | yes/no | Overwrite previous report or create new |
 | passed_steps_screenshots | yes/no | Include screenshots for passed steps |
 | failed_steps_screenshots | yes/no | Include screenshots for failed steps |
-| retry_failed_tests | yes/no | Enable test retry for failures |
-| max_retries_count | number | Maximum retry attempts |
 
 ## Best Practices
 
