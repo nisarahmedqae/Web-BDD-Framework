@@ -2,8 +2,8 @@ package com.nahmed.events;
 
 import com.nahmed.driver.Driver;
 import com.nahmed.enums.ConfigProperties;
+import com.nahmed.utils.ConfigurationManager;
 import com.nahmed.utils.PropertyUtils;
-import com.nahmed.utils.TestContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.slf4j.Logger;
