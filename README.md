@@ -1,186 +1,169 @@
-# Web-BDD-Framework : Complete Documentation
+# Web-BDD-Framework (by: Nisar Ahmed)
 
-## Framework Overview
+This is a comprehensive **BDD (Behavior-Driven Development)** test automation framework built with **Java, Selenium, Cucumber, and TestNG**. It's designed for testing web applications, providing robust, readable, and maintainable automated tests.
 
-This framework is designed for automating web application testing using Behavior-Driven Development (BDD) approach with Cucumber, TestNG, and Selenium. It provides a structured way to write, execute, and report automated tests with built-in configuration management and detailed reporting.
+-----
 
-## Key Components and Flow
+## ✨ Features
 
-### 1. Test Execution Flow
+  * **Behavior-Driven Development:** Utilizes Cucumber and Gherkin syntax (`.feature` files) for clear, business-readable test scenarios.
+  * **Page Object Model (POM):** Organizes UI elements and interactions into separate page classes for better maintainability and code reuse.
+  * **Parallel Execution:** Supports running tests in parallel using TestNG's data provider to significantly reduce execution time.
+  * **Multi-Environment Support:** Easily switch between different test environments (e.g., INT, CERT) using a single configuration property.
+  * **Detailed Reporting:** Generates beautiful, interactive HTML reports with **ExtentReports**, including screenshots for failed/skipped steps.
+  * **Custom Listeners:** A powerful `TestListener` provides real-time, color-coded console logs for test runs and granular control over report generation.
+  * **Robust Waits:** Implements an `ExplicitWaitFactory` to handle dynamic elements and avoid flaky tests.
+  * **Centralized Driver Management:** Uses `ThreadLocal` to manage WebDriver instances, ensuring thread safety during parallel execution.
+  * **Rerun Failed Tests:** Automatically generates a `rerun_data.txt` file to easily re-execute only the failed scenarios.
+  * **Utility-Driven:** Includes helper classes for common tasks like property management, dynamic XPath generation, assertions, and more.
+
+-----
+
+## 🛠️ Tech Stack
+
+  * **Language:** Java 17+
+  * **Test Runner:** TestNG
+  * **BDD Tool:** Cucumber
+  * **Browser Automation:** Selenium WebDriver
+  * **Build Tool:** Maven
+  * **Reporting:** ExtentReports
+  * **Logging:** Logback / SLF4J
+
+-----
+
+## 📂 Project Structure
+
+The framework follows a standard Maven project structure with a clear separation of concerns.
 
 ```
-TestRunner (Triggers) 
-  → Cucumber Features 
-    → Step Definitions 
-      → Page Objects 
-        → BrowserService (Wrapper for Selenium operations)
-          → Explicit Wait Factory
-          → Driver Manager
+Web-BDD-Framework/
+├── reports/                          # Output directory for logs and reports
+│   ├── cucumber/
+│   ├── extent/
+│   └── logs/
+├── src/
+│   ├── test/
+│   │   ├── java/
+│   │   │   └── com/nahmed/
+│   │   │       ├── constants/        # Framework-level constants (e.g., file paths)
+│   │   │       ├── driver/           # WebDriver management (Driver, DriverManager)
+│   │   │       ├── enums/            # Enumerations for type-safe configuration (ConfigProperties)
+│   │   │       ├── events/           # Cucumber Hooks (Before/After scenarios)
+│   │   │       ├── exceptions/       # Custom exception classes
+│   │   │       ├── factories/        # Factories for creating objects (e.g., ExplicitWaitFactory)
+│   │   │       ├── features/         # Gherkin feature files
+│   │   │       ├── listeners/        # Custom test listeners for logging and reporting
+│   │   │       ├── pageobjects/      # Page Object Model classes
+│   │   │       ├── reports/          # ExtentReports configuration and management
+│   │   │       ├── runners/          # TestNG test runners for Cucumber
+│   │   │       ├── stepdefinitions/  # Step implementation for Gherkin features
+│   │   │       └── utils/            # Helper and utility classes
+│   │   └── resources/
+│   │       ├── config.properties     # Main configuration file for the framework
+│   │       ├── cucumber.properties   # Cucumber-specific settings
+│   │       └── logback.xml           # Logging configuration
+└── pom.xml                           # Maven project configuration
 ```
 
-### 2. Configuration Management
+-----
 
-- **`config.properties`**: Central configuration file for all test parameters
-- **`PropertyUtils.java`**: Utility to read properties with static initialization
-- **Environment Handling**:
-    - Uses `TestContext.java` to manage environment-specific configurations
-    - Supports INT and CERT environments with different URLs and credentials
+## 🚀 Getting Started
 
-### 3. Driver Management
+### Prerequisites
 
-- **`Driver.java`**: Initializes and quits WebDriver instances
-- **`DriverManager.java`**: Thread-safe WebDriver management using ThreadLocal
-- Supported browsers: Chrome (including headless) and Edge
+Before you begin, ensure you have the following installed:
 
-### 4. Page Object Model
+  * **Java JDK 17** or higher
+  * **Apache Maven**
+  * An IDE like **IntelliJ IDEA** or **Eclipse**
 
-- Each page (e.g., `LoginPage.java`, `HomePage.java`) contains:
-    - Locators (By elements)
-    - Methods representing user actions
-    - Built-in waits and logging
+### Setup
 
-### 5. Wait Strategies
+1.  **Clone the repository:**
 
-- **`ExplicitWaitFactory.java`**: Factory for different wait conditions:
-    - CLICKABLE
-    - PRESENCE
-    - VISIBLE
-    - NONE
-- Implicit wait configured via `config.properties`
+    ```bash
+    git clone <your-repository-url>
+    ```
 
-### 6. Reporting System
+2.  **Navigate to the project directory:**
 
-- **Extent Reports** with:
-    - Screenshots for failed/passed/skipped steps (configurable)
-    - Thread-safe implementation using `ExtentManager.java`
-    - Scenario and step-level reporting
-- **Logging** with Logback:
-    - Console and file output
-    - Color-coded output in console
+    ```bash
+    cd Web-BDD-Framework
+    ```
 
-### 7. Utility Classes
+3.  **Install dependencies:** Maven will automatically download all the required dependencies defined in `pom.xml`.
 
-- **`BrowserService.java`**: Wrapper for common Selenium operations
-- **`DynamicXpathUtils.java`**: Handles dynamic XPath generation
-- **`ScreenshotUtils.java`**: Captures screenshots as base64
-- **`DecodeUtils.java`**: Handles base64 decoding
+    ```bash
+    mvn clean install
+    ```
 
-## How to Use the Framework
+-----
 
-### 1. Prerequisites
+## ⚙️ Configuration
 
-- Java 17
-- Maven
-- Chrome/Edge browser installed
-- Browser drivers in system PATH
+All major framework settings are managed in `src/test/resources/config.properties`.
 
-### 2. Setup
+### Switching Environments
 
-1. Clone the repository
-2. Configure `config.properties`:
-   ```properties
-   browser=chrome
-   environment=int
-   url_int=https://your-test-url.com
-   username_int=testuser
-   password_int=testpass
-   ```
-3. Install dependencies:
-   ```bash
-   mvn clean install
-   ```
+You can override the default environment set in `config.properties` by passing a system property during the Maven build.
 
-### 3. Writing Tests
-
-#### Feature Files (BDD)
-
-```gherkin
-@regression
-Feature: Application Login
-  Scenario: Valid login
-    Given User is on the application login page
-    When User enters valid credentials
-    Then User should be navigated to the homepage
-```
-
-#### Step Definitions
-
-```java
-public class LoginSteps {
-    @Given("User is on the application login page")
-    public void userIsOnLoginPage() {
-        browserService.openUrl(PropertyUtils.getValue("url"));
-    }
-}
-```
-
-#### Page Objects
-
-```java
-public class LoginPage {
-    private final By emailTextbox = By.id("userEmail");
-    
-    public LoginPage enterEmail(String email) {
-        browserService.sendKeys(emailTextbox, email, WaitStrategy.VISIBLE, 10, "Email");
-        return this;
-    }
-}
-```
-
-### 4. Running Tests
-
-#### From Command Line
+To run tests on the **CERT** environment:
 
 ```bash
-mvn clean test
+mvn clean test -Denv=CERT
 ```
 
-#### With Specific Environment
+-----
+
+## ▶️ How to Run Tests
+
+### Running via Maven
+
+You can execute tests from the command line using Maven. The `TestRunner.java` class controls which tests are run via its `tags` attribute.
+
+1.  **Run a specific tag (e.g., `@login`):** Modify the `tags` attribute in `src/test/java/com/nahmed/runners/TestRunner.java` and then run:
+
+    ```bash
+    mvn clean test
+    ```
+
+2.  **Run all tests:** To run all feature files, simply remove the `tags` attribute from `TestRunner.java`.
+
+### Running Failed Tests
+
+The framework is configured to automatically capture failed scenarios in `reports/cucumber/rerun_data.txt`. You can run only these failed tests using `FailedTestRunner.java`.
+
+To run only the failed tests from the last run:
 
 ```bash
-mvn test -Denv=cert
+mvn clean test -Dcucumber.features="@reports/cucumber/rerun_data.txt"
 ```
 
-#### Running Specific Tags
+### Parallel Execution
 
-Use Cucumber options:
+Parallel execution is enabled by default in the runners (`TestRunner.java` and `FailedTestRunner.java`) via TestNG's data provider. The number of parallel threads can be configured within these runner files.
 
-```java
-@CucumberOptions(tags = "@login")
-```
+-----
 
-### 5. Viewing Results
+## 📊 Reporting and Logging
 
-After execution, reports are generated in:
-- `reports/extent/extent.html` (or timestamped version)
-- `reports/logs/test-execution.log`
+After a test run, the following reports and logs are generated in the `reports/` directory:
 
-## Key Configuration Options
+  * **ExtentReports:** A detailed, interactive HTML report.
+      * **Location:** `reports/extent/extent_report.html`
+  * **Cucumber HTML Report:** A standard report generated by Cucumber.
+      * **Location:** `reports/cucumber/bdd_report.html`
+  * **Execution Log:** A text file containing detailed logs from the test run, configured by `logback.xml`.
+      * **Location:** `reports/logs/test_execution.log`
 
-| Property | Values | Description |
-|----------|--------|-------------|
-| browser | chrome, edge | Browser for test execution |
-| over_ride_reports | yes/no | Overwrite previous report or create new |
-| passed_steps_screenshots | yes/no | Include screenshots for passed steps |
-| failed_steps_screenshots | yes/no | Include screenshots for failed steps |
+-----
 
-## Best Practices
+## ✍️ Writing New Tests
 
-1. **Page Objects**:
-    - Keep locators private
-    - Return page objects for method chaining
-    - Use explicit waits consistently
+Follow these steps to add a new test case:
 
-2. **Step Definitions**:
-    - Keep business logic in page objects
-    - Use dependency injection for shared state
+1.  **Create a Feature File:** Add a new `.feature` file in `src/test/java/com/nahmed/features/`. Write your scenarios using Gherkin syntax.
+2.  **Create Page Objects:** For any new pages your test interacts with, create a corresponding class in `com.nahmed.pageobjects`. Add locators (using `By`) and methods that represent user actions on that page.
+3.  **Implement Step Definitions:** Create a new class in `com.nahmed.stepdefinitions`. Implement the Java methods that map to your Gherkin steps. Use your Page Object methods here to interact with the application.
 
-3. **Reporting**:
-    - Add descriptive messages in ExtentLogger
-    - Configure screenshot preferences in properties
-
-4. **Configuration**:
-    - Keep sensitive data out of version control
-    - Use environment variables for secrets in CI/CD
-
-This framework provides a solid foundation for web automation testing with BDD that can be easily extended for your specific needs.
+-----

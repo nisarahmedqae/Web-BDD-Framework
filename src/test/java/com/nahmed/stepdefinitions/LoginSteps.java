@@ -5,6 +5,7 @@ import com.nahmed.listeners.TestListener;
 import com.nahmed.pageobjects.HomePage;
 import com.nahmed.pageobjects.LoginPage;
 import com.nahmed.utils.BrowserService;
+import com.nahmed.utils.ConfigurationManager;
 import com.nahmed.utils.PropertyUtils;
 import com.nahmed.utils.TestContext;
 import io.cucumber.java.en.And;
@@ -31,7 +32,7 @@ public class LoginSteps {
 
     @Given("User is on the application login page")
     public void userIsOnTheApplicationLoginPage() {
-        String url = PropertyUtils.getValue(ConfigProperties.URL + testContext.getCurrentEnvironment());
+        String url = PropertyUtils.getValue(ConfigProperties.URL + ConfigurationManager.getCurrentEnvironment());
         browserService.openUrl(url);
     }
 
@@ -47,10 +48,10 @@ public class LoginSteps {
 
     @Given("the user is logged into the application")
     public void theUserIsLoggedIntoTheApplication() {
-        String url = PropertyUtils.getValue(ConfigProperties.URL + testContext.getCurrentEnvironment());
+        String url = PropertyUtils.getValue(ConfigProperties.URL + ConfigurationManager.getCurrentEnvironment());
         browserService.openUrl(url);
-        loginPage.enterEmail(PropertyUtils.getValue(ConfigProperties.USERNAME + testContext.getCurrentEnvironment()))
-                .enterPassword(PropertyUtils.getValue(ConfigProperties.PASSWORD + testContext.getCurrentEnvironment()));
+        loginPage.enterEmail(PropertyUtils.getValue(ConfigProperties.USERNAME + ConfigurationManager.getCurrentEnvironment()))
+                .enterPassword(PropertyUtils.getValue(ConfigProperties.PASSWORD + ConfigurationManager.getCurrentEnvironment()));
         loginPage.clickOnLoginButton();
         LOG.info(homePage.getToastMessage());
     }

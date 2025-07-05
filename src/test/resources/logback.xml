@@ -2,13 +2,15 @@
 
     <!-- Define properties -->
     <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
-    <property name="LOG_DIR" value="logs"/> <!-- Log directory relative to project root -->
-    <property name="LOG_FILE" value="reports/${LOG_DIR}/test_execution.log"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+    <property name="LOG_DIR" value="reports/logs"/> <!-- Log directory relative to project root -->
+    <property name="LOG_FILE" value="${LOG_DIR}/test_execution.log"/>
 
     <!-- Appender for Console Output -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>${LOG_PATTERN}</pattern>
+            <!-- Using a slightly shorter pattern for the console for readability -->
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
         </encoder>
     </appender>
 
@@ -23,32 +25,20 @@
 
     <!-- === Configure Logger Levels === -->
 
-    <!-- Set the level for your framework's packages -->
-    <!-- Use DEBUG to see detailed logs from RestAssuredRequestFilter -->
+    <!-- Set the level for your framework's packages to DEBUG for detailed output -->
     <logger name="com.nahmed" level="DEBUG"/>
 
-    <!-- Set the level for noisy libraries -->
-    <!-- Your existing appenders and root logger configuration -->
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender>
-
-    <!-- Set the logging level for freemarker.cache to WARN or INFO -->
+    <!-- Reduce noise from verbose third-party libraries -->
     <logger name="freemarker.cache" level="WARN"/>
-    <!-- Or use INFO if you still want some, but not DEBUG: -->
-    <!-- <logger name="freemarker.cache" level="INFO"/> -->
+    <logger name="org.openqa.selenium" level="INFO"/>
+    <logger name="io.netty" level="INFO"/>
 
-    <root level="DEBUG"> <!-- Or your default root level -->
-        <appender-ref ref="STDOUT" />
-    </root>
 
     <!-- Root logger level - catches everything not specified above -->
-    <!-- Set to INFO for general output, WARN to reduce noise -->
+    <!-- Set to INFO for general output. This is the final fallback. -->
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="FILE"/> <!-- Add this line to enable file logging -->
+        <appender-ref ref="FILE"/>
     </root>
 
 </configuration>
