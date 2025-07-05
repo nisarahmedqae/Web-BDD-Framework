@@ -1,29 +1,55 @@
 package com.nahmed.utils;
 
-import com.nahmed.enums.ConfigProperties;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class TestContext {
 
-    public Map<String, Object> sessionMap = new ConcurrentHashMap<>();
+    private final Map<String, Object> data = new ConcurrentHashMap<>();
 
-    // Environment selection
-    private static final String ENV_SYSTEM_PROPERTY = "env"; // System property: -Denv=CERT
-    private String currentEnvironment = null;
+    public <T> T getData(String key, Class<T> type) {
+        Object value = data.get(key);
 
-    // Method to get the determined environment if needed elsewhere safely
-    public String getCurrentEnvironment() {
-        if (currentEnvironment == null) {
-            String envFromProps = PropertyUtils.getValue(ConfigProperties.ENVIRONMENT);
-            String defaultEnvironment = (envFromProps == null || envFromProps.trim().isEmpty())
-                    ? "INT"
-                    : envFromProps;
-
-            this.currentEnvironment = "_" + System.getProperty(ENV_SYSTEM_PROPERTY, defaultEnvironment);
+        // If the type is already correct, just cast and return
+        if (type.isInstance(value)) {
+            return type.cast(value);
         }
-        return currentEnvironment;
+
+        // --- Automatic Type Conversion ---
+        if (value instanceof String) {
+            String stringValue = (String) value;
+            try {
+                if (type == Integer.class) {
+                    return type.cast(Integer.valueOf(stringValue));
+                }
+                if (type == Boolean.class) {
+                    return type.cast(Boolean.valueOf(stringValue));
+                }
+                if (type == Long.class) {
+                    return type.cast(Long.valueOf(stringValue));
+                }
+                if (type == Double.class) {
+                    return type.cast(Double.valueOf(stringValue));
+                }
+            } catch (NumberFormatException e) {
+                throw new ClassCastException(String.format(
+                        "Failed to convert String value '%s' to type %s for key '%s'.",
+                        stringValue, type.getSimpleName(), key
+                ));
+            }
+        }
+
+        // If no conversion is possible, throw a clear exception.
+        throw new ClassCastException(String.format(
+                "Error retrieving data. Value for key '%s' is of type %s, but you requested %s. No automatic conversion was possible.",
+                key,
+                value.getClass().getName(),
+                type.getName()
+        ));
+    }
+
+    public void setData(String key, Object value) {
+        data.put(key, value);
     }
 
 }
