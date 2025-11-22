@@ -1,18 +1,26 @@
 package com.nahmed.pageobjects;
 
-import com.nahmed.enums.WaitStrategy;
-import com.nahmed.factories.ExplicitWaitFactory;
 import com.nahmed.utils.BrowserService;
+import com.nahmed.utils.TestContext;
+import com.nahmed.utils.WaitHelper;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class HomePage {
 
     // Variables
-    BrowserService browserService;
+    private TestContext testContext;
+    private BrowserService browserService;
+    private WaitHelper waitHelper;
 
     // Constructor
-    public HomePage() {
-        this.browserService = new BrowserService();
+    public HomePage(TestContext testContext) {
+        this.testContext = testContext;
+        this.browserService = new BrowserService(testContext);
+        this.waitHelper = new WaitHelper();
+
     }
 
     // Locators
@@ -24,23 +32,28 @@ public class HomePage {
 
     // Methods
     public String getToastMessage() {
-        return browserService.getText(toastMessage, WaitStrategy.VISIBLE, 10);
+        WebElement element = waitHelper.waitForVisibility(toastMessage, 10);
+        return browserService.getText(element);
     }
 
     public String getPageName() {
-        return browserService.getText(pageName, WaitStrategy.VISIBLE, 15);
+        WebElement element = waitHelper.waitForVisibility(pageName, 15);
+        return browserService.getText(element);
     }
 
     public void clickOnAddToCartButtonForProduct(String productName) {
-        boolean isGone = ExplicitWaitFactory.waitUntilElementIsInvisible(toastMessage, 10);
+        boolean isGone = waitHelper.waitForInvisibility(toastMessage, 10);
+
         if (isGone) {
-            int index = browserService.getIndexOfElementWithText(products, productName, WaitStrategy.VISIBLE, 10, "Products");
+            List<WebElement> products = waitHelper.waitForVisibilityOfAll(this.products, 10);
+            int index = browserService.getIndexOfElementWithText(products, productName);
             browserService.clickElementAtIndex(addToCartButton, index, "Add to Cart Button");
         }
     }
 
     public void clickOnCartButton() {
-        browserService.click(cartButton, WaitStrategy.VISIBLE, 15, "Cart Button");
+        WebElement element = waitHelper.waitForVisibility(cartButton, 15);
+        browserService.click(element, "Cart Button");
     }
 
 }

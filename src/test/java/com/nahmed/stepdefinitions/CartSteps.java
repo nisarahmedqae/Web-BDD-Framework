@@ -2,18 +2,21 @@ package com.nahmed.stepdefinitions;
 
 import com.nahmed.pageobjects.CartPage;
 import com.nahmed.pageobjects.HomePage;
+import com.nahmed.utils.TestContext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 
 public class CartSteps {
 
-    HomePage homePage;
-    CartPage cartPage;
+    private TestContext testContext;
+    private HomePage homePage;
+    private CartPage cartPage;
 
-    public CartSteps() {
-        this.homePage = new HomePage();
-        this.cartPage = new CartPage();
+    public CartSteps(TestContext testContext) {
+        this.testContext = testContext;
+        this.homePage = new HomePage(testContext);
+        this.cartPage = new CartPage(testContext);
     }
 
     @And("the user navigates to the Cart page")

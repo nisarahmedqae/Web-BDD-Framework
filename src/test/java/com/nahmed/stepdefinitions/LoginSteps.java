@@ -18,16 +18,16 @@ public class LoginSteps {
 
     private static final Logger LOG = LogManager.getLogger(TestListener.class);
 
-    LoginPage loginPage;
-    HomePage homePage;
-    TestContext testContext;
-    BrowserService browserService;
+    private TestContext testContext;
+    private LoginPage loginPage;
+    private HomePage homePage;
+    private BrowserService browserService;
 
-    public LoginSteps() {
-        this.loginPage = new LoginPage();
-        this.testContext = new TestContext();
-        this.browserService = new BrowserService();
-        this.homePage = new HomePage();
+    public LoginSteps(TestContext testContext) {
+        this.testContext = testContext;
+        this.loginPage = new LoginPage(testContext);
+        this.browserService = new BrowserService(testContext);
+        this.homePage = new HomePage(testContext);
     }
 
     @Given("User is on the application login page")

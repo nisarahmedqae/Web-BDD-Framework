@@ -116,3 +116,160 @@ java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page N
 2025-06-15 17:34:17.161 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
 2025-06-15 17:34:17.161 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-06-15T12:04:17.147573Z[0m
 2025-06-15 17:34:17.161 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-11-22 13:28:39.820 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\iamni\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+2025-11-22 13:28:40.405 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-11-22 13:28:40.405 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION STARTED [0m
+2025-11-22 13:28:40.406 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-11-22T07:58:40.405510Z[0m
+2025-11-22 13:28:40.406 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-11-22 13:28:40.778 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:28:40.779 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-11-22 13:28:40.779 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: TC01 Login test with different credentials (Line: 16)[0m
+2025-11-22 13:28:40.779 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-11-22 13:28:40.779 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:28:40.781 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - Environment selected: INTEGRATION
+2025-11-22 13:28:44.868 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-11-22 13:28:46.541 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-11-22 13:28:46.543 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-11-22 13:28:46.784 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-11-22 13:28:46.787 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-11-22 13:28:46.868 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-11-22 13:28:46.870 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-11-22 13:28:47.701 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: Verify Page Name of Home Page expected [Invalid Page Name] but found [Automation Practice]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.nahmed.stepdefinitions.HomeSteps.userShouldBeNavigatedToTheHomepage(HomeSteps.java:27)
+	at ✽.User should be navigated to the homepage "Invalid Page Name"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/login.feature:12)
+2025-11-22 13:28:47.705 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then User should be navigated to the homepage "Invalid Page Name"[0m
+2025-11-22 13:28:47.891 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:28:47.891 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: TC01 Login test with different credentials --> FAILED[0m
+2025-11-22 13:28:47.893 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 7.20 seconds[0m
+2025-11-22 13:28:47.893 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:28:47.893 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-11-22 13:28:47.904 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:28:47.904 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: login.feature[0m
+2025-11-22 13:28:47.904 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: TC02 Login test with different credentials (Line: 17)[0m
+2025-11-22 13:28:47.904 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @login[0m
+2025-11-22 13:28:47.904 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:28:47.905 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - Environment selected: INTEGRATION
+2025-11-22 13:28:49.107 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given User is on the application login page[0m
+2025-11-22 13:28:49.301 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given User is on the application login page[0m
+2025-11-22 13:28:49.302 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-11-22 13:28:49.863 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When User enters email "demo.testfire@gmail.com" and password "Demo@123"[0m
+2025-11-22 13:28:49.863 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And User click on the login button[0m
+2025-11-22 13:28:50.003 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And User click on the login button[0m
+2025-11-22 13:28:50.004 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then User should be navigated to the homepage "Automation Practice"[0m
+2025-11-22 13:28:50.179 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then User should be navigated to the homepage "Automation Practice"[0m
+2025-11-22 13:28:50.310 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-11-22 13:28:50.310 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32mFinished Scenario: TC02 Login test with different credentials --> PASSED[0m
+2025-11-22 13:28:50.311 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  Duration: 2.41 seconds[0m
+2025-11-22 13:28:50.311 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m*****************************************************************************************[0m
+2025-11-22 13:28:50.311 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-11-22 13:28:50.315 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:28:50.315 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: products.feature[0m
+2025-11-22 13:28:50.315 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: TC01 Adding "IPHONE 13 PRO" to the cart (Line: 17)[0m
+2025-11-22 13:28:50.315 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @addingProductToCart[0m
+2025-11-22 13:28:50.315 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:28:50.316 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - Environment selected: INTEGRATION
+2025-11-22 13:28:51.447 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given the user is logged into the application[0m
+2025-11-22 13:28:53.464 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - Login Successfully
+2025-11-22 13:28:53.465 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given the user is logged into the application[0m
+2025-11-22 13:28:53.465 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When the user clicks on Add to Cart button for product "IPHONE 13 PRO"[0m
+2025-11-22 13:29:06.345 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - Product Added To Cart
+2025-11-22 13:29:06.347 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When the user clicks on Add to Cart button for product "IPHONE 13 PRO"[0m
+2025-11-22 13:29:06.348 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And the user navigates to the Cart page[0m
+2025-11-22 13:29:06.633 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And the user navigates to the Cart page[0m
+2025-11-22 13:29:06.636 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then the product "IPHONE 13 PRO" should be visible in the cart[0m
+2025-11-22 13:29:27.676 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h3[text()='IPHONE 13 PRO'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\iamni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60840}, goog:processID: 17160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60840/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60bb4c1f34bd3f1e4455145d02bf74ca
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.nahmed.utils.WaitHelper.waitForVisibility(WaitHelper.java:36)
+	at com.nahmed.pageobjects.CartPage.getProductName(CartPage.java:47)
+	at com.nahmed.stepdefinitions.CartSteps.theProductShouldBeVisibleInTheCart(CartSteps.java:30)
+	at ✽.the product "IPHONE 13 PRO" should be visible in the cart(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/products.feature:12)
+2025-11-22 13:29:27.677 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: Then the product "IPHONE 13 PRO" should be visible in the cart[0m
+2025-11-22 13:29:27.677 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And the product "IPHONE 13 PRO" price should be "231500"[0m
+2025-11-22 13:29:27.859 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [33m  STEP SKIPPED: And the product "IPHONE 13 PRO" price should be "231500"[0m
+2025-11-22 13:29:28.013 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:29:28.014 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: TC01 Adding "IPHONE 13 PRO" to the cart --> FAILED[0m
+2025-11-22 13:29:28.014 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 37.70 seconds[0m
+2025-11-22 13:29:28.014 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:29:28.014 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-11-22 13:29:28.017 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:29:28.018 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: products.feature[0m
+2025-11-22 13:29:28.018 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: TC02 Adding "ZARA COAT 3" to the cart (Line: 18)[0m
+2025-11-22 13:29:28.018 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @addingProductToCart[0m
+2025-11-22 13:29:28.018 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:29:28.018 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - Environment selected: INTEGRATION
+2025-11-22 13:29:29.109 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given the user is logged into the application[0m
+2025-11-22 13:29:31.877 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - Login Successfully
+2025-11-22 13:29:31.877 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given the user is logged into the application[0m
+2025-11-22 13:29:31.878 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When the user clicks on Add to Cart button for product "ZARA COAT 3"[0m
+2025-11-22 13:29:44.182 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - Product Added To Cart
+2025-11-22 13:29:44.183 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When the user clicks on Add to Cart button for product "ZARA COAT 3"[0m
+2025-11-22 13:29:44.183 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And the user navigates to the Cart page[0m
+2025-11-22 13:29:44.495 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And the user navigates to the Cart page[0m
+2025-11-22 13:29:44.495 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then the product "ZARA COAT 3" should be visible in the cart[0m
+2025-11-22 13:29:44.528 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then the product "ZARA COAT 3" should be visible in the cart[0m
+2025-11-22 13:29:44.529 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And the product "ZARA COAT 3" price should be "31500"[0m
+2025-11-22 13:29:44.957 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.nahmed.stepdefinitions.CartSteps.theProductPriceShouldBe(CartSteps.java:37)
+	at ✽.the product "ZARA COAT 3" price should be "31500"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/products.feature:13)
+2025-11-22 13:29:44.957 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: And the product "ZARA COAT 3" price should be "31500"[0m
+2025-11-22 13:29:45.127 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:29:45.127 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: TC02 Adding "ZARA COAT 3" to the cart --> FAILED[0m
+2025-11-22 13:29:45.127 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 17.11 seconds[0m
+2025-11-22 13:29:45.127 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:29:45.127 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-11-22 13:29:45.129 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:29:45.129 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mFeature: products.feature[0m
+2025-11-22 13:29:45.129 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mStarting Scenario: TC03 Adding "ADIDAS ORIGINAL" to the cart (Line: 19)[0m
+2025-11-22 13:29:45.129 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34mTags: @regression, @addingProductToCart[0m
+2025-11-22 13:29:45.129 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m*****************************************************************************************[0m
+2025-11-22 13:29:45.130 [TestNG-PoolService-1] INFO  com.nahmed.events.Hooks - Environment selected: INTEGRATION
+2025-11-22 13:29:46.234 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Given the user is logged into the application[0m
+2025-11-22 13:29:47.761 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - Login Successfully
+2025-11-22 13:29:47.761 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Given the user is logged into the application[0m
+2025-11-22 13:29:47.762 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  When the user clicks on Add to Cart button for product "ADIDAS ORIGINAL"[0m
+2025-11-22 13:30:00.159 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - Product Added To Cart
+2025-11-22 13:30:00.159 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: When the user clicks on Add to Cart button for product "ADIDAS ORIGINAL"[0m
+2025-11-22 13:30:00.161 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And the user navigates to the Cart page[0m
+2025-11-22 13:30:00.536 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: And the user navigates to the Cart page[0m
+2025-11-22 13:30:00.537 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  Then the product "ADIDAS ORIGINAL" should be visible in the cart[0m
+2025-11-22 13:30:00.595 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [32m  STEP PASSED: Then the product "ADIDAS ORIGINAL" should be visible in the cart[0m
+2025-11-22 13:30:00.596 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [34m  And the product "ADIDAS ORIGINAL" price should be "31500"[0m
+2025-11-22 13:30:01.010 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  Underlying Step Failure Cause: [0m
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.nahmed.stepdefinitions.CartSteps.theProductPriceShouldBe(CartSteps.java:37)
+	at ✽.the product "ADIDAS ORIGINAL" price should be "31500"(file:///C:/Users/iamni/IdeaProjects/Web-BDD-Framework/src/test/java/com/nahmed/features/products.feature:13)
+2025-11-22 13:30:01.011 [TestNG-PoolService-1] ERROR com.nahmed.listeners.TestListener - [31m  STEP FAILED: And the product "ADIDAS ORIGINAL" price should be "31500"[0m
+2025-11-22 13:30:01.269 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:30:01.269 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31mFinished Scenario: TC03 Adding "ADIDAS ORIGINAL" to the cart --> FAILED[0m
+2025-11-22 13:30:01.269 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m  Duration: 16.14 seconds[0m
+2025-11-22 13:30:01.269 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - [31m*****************************************************************************************[0m
+2025-11-22 13:30:01.269 [TestNG-PoolService-1] INFO  com.nahmed.listeners.TestListener - 
+2025-11-22 13:30:01.292 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m
+2025-11-22 13:30:01.293 [main] INFO  com.nahmed.listeners.TestListener - [35m CUCUMBER TEST EXECUTION FINISHED [0m
+2025-11-22 13:30:01.293 [main] INFO  com.nahmed.listeners.TestListener - [31m Overall Status: FAILED[0m
+2025-11-22 13:30:01.293 [main] INFO  com.nahmed.listeners.TestListener - [35m Timestamp: 2025-11-22T08:00:01.276904700Z[0m
+2025-11-22 13:30:01.293 [main] INFO  com.nahmed.listeners.TestListener - [35m=========================================================================================[0m

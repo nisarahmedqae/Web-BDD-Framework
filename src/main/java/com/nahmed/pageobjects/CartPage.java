@@ -1,18 +1,28 @@
 package com.nahmed.pageobjects;
 
-import com.nahmed.enums.WaitStrategy;
+import com.nahmed.driver.DriverManager;
 import com.nahmed.utils.BrowserService;
 import com.nahmed.utils.DynamicXpathUtils;
+import com.nahmed.utils.TestContext;
+import com.nahmed.utils.WaitHelper;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class CartPage {
 
     // Variables
-    BrowserService browserService;
+    private TestContext testContext;
+    private BrowserService browserService;
+    private WebDriver driver;
+    private WaitHelper waitHelper;
 
     // Constructor
-    public CartPage() {
-        this.browserService = new BrowserService();
+    public CartPage(TestContext testContext) {
+        this.testContext = testContext;
+        this.browserService = new BrowserService(testContext);
+        this.waitHelper = new WaitHelper();
+        this.driver = DriverManager.getDriver();
     }
 
     // Locators
@@ -23,21 +33,25 @@ public class CartPage {
 
     // Methods
     public String getPageName() {
-        return browserService.getText(pageName, WaitStrategy.VISIBLE, 15);
+        WebElement element = waitHelper.waitForVisibility(pageName, 15);
+        return browserService.getText(element);
     }
 
     public String getMyCartText() {
-        return browserService.getText(myCart, WaitStrategy.VISIBLE, 15);
+        WebElement element = waitHelper.waitForVisibility(myCart, 15);
+        return browserService.getText(element);
     }
 
     public String getProductName(String expProductName) {
         String newXpath = DynamicXpathUtils.getXpath(productName, expProductName);
-        return browserService.getText(By.xpath(newXpath), WaitStrategy.VISIBLE, 15);
+        WebElement element = waitHelper.waitForVisibility(By.xpath(newXpath), 15);
+        return browserService.getText(element);
     }
 
     public String getProductPrice(String expProductName) {
         String newXpath = DynamicXpathUtils.getXpath(productPrice, expProductName);
-        return browserService.getText(By.xpath(newXpath), WaitStrategy.NONE, 0);
+        WebElement element = driver.findElement(By.xpath(newXpath));
+        return browserService.getText(element);
     }
 
 }

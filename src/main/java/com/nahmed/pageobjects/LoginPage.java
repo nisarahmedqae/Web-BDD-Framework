@@ -1,17 +1,23 @@
 package com.nahmed.pageobjects;
 
-import com.nahmed.enums.WaitStrategy;
 import com.nahmed.utils.BrowserService;
+import com.nahmed.utils.TestContext;
+import com.nahmed.utils.WaitHelper;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class LoginPage {
 
     // Variables
-    BrowserService browserService;
+    private TestContext testContext;
+    private BrowserService browserService;
+    private WaitHelper waitHelper;
 
     // Constructor
-    public LoginPage() {
-        this.browserService = new BrowserService();
+    public LoginPage(TestContext testContext) {
+        this.testContext = testContext;
+        this.browserService = new BrowserService(testContext);
+        this.waitHelper = new WaitHelper();
     }
 
     // Locators
@@ -21,17 +27,20 @@ public class LoginPage {
 
     // Methods
     public LoginPage enterEmail(String email) {
-        browserService.sendKeys(emailTextbox, email, WaitStrategy.NONE, 0, "Email");
+        WebElement element = waitHelper.findElement(emailTextbox);
+        browserService.sendKeys(element, email, "Email");
         return this;
     }
 
     public LoginPage enterPassword(String password) {
-        browserService.sendKeys(passwordTextbox, password, WaitStrategy.NONE, 0, "Password");
+        WebElement element = waitHelper.findElement(passwordTextbox);
+        browserService.sendKeys(element, password, "Password");
         return this;
     }
 
     public LoginPage clickOnLoginButton() {
-        browserService.click(loginButton, WaitStrategy.NONE, 0, "Login Button");
+        WebElement element = waitHelper.findElement(loginButton);
+        browserService.click(element, "Login Button");
         return this;
     }
 

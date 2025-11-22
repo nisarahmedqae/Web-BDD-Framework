@@ -2,6 +2,7 @@ package com.nahmed.stepdefinitions;
 
 import com.nahmed.listeners.TestListener;
 import com.nahmed.pageobjects.HomePage;
+import com.nahmed.utils.TestContext;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.LogManager;
@@ -12,10 +13,12 @@ public class HomeSteps {
 
     private static final Logger LOG = LogManager.getLogger(TestListener.class);
 
-    HomePage homePage;
+    private TestContext testContext;
+    private HomePage homePage;
 
-    public HomeSteps() {
-        this.homePage = new HomePage();
+    public HomeSteps(TestContext testContext) {
+        this.testContext = testContext;
+        this.homePage = new HomePage(testContext);
     }
 
     @Then("User should be navigated to the homepage {string}")
